@@ -1,6 +1,7 @@
 
 body{
     /* background-image: url("/images/pankaj-patel-eygpU6KfOBk-unsplash.jpg"); */
+    background-color:wheat;
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
@@ -16,7 +17,7 @@ body{
   }
   
   *{
-    font-family: 'Lato', sans-serif;
+    
       box-sizing:border-box;
   }
   @media(max-width:768px){
@@ -40,14 +41,11 @@ body{
 .navbar-brand h1{
     text-transform: uppercase;
     font-weight: bold;
-    color:gainsboro;
+    color:blue;
     font-family:'Times New Roman', Times, serif;
     text-shadow:1px 2px 2px;
 }
-.navbar-brand span{
-    color:plum;
-    font-family: 'Pacifico', cursive;
-}
+
 .navbar-nav a{
     font-weight: bold;
     margin-left: 30px;
@@ -73,8 +71,8 @@ nav{
      background-color:#000;
      color:whitesmoke;
      text-align:center;
-     margin-top:50px;
      padding-top:10px;
+     margin-top:30px;
  }
  #italic{
      font-style: italic;
@@ -99,6 +97,7 @@ nav{
 }  
 .content{
     /* background:url("/images/content2.jpg") no-repeat; */
+    background-color: white;
     background-size: cover;
     border:5px black;
     box-shadow: 3px 3px 3px 2px whitesmoke;
@@ -129,4 +128,29 @@ li{
 /* Topics  */
 .topics-1{
     margin-left: 100px;
+}
+
+.about{
+    background-color:whitesmoke;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:10px;
+    box-shadow:2px 2px 2px 1px whitesmoke;
+}
+section{
+    
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+.author h3,h5{
+    color:black;
+    font-weight: bold;
+}
+.author img{
+    width:200px;
+    height:200px;
+}
+
+.about-section{
+    padding:40px;
 }
