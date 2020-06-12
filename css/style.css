@@ -128,10 +128,7 @@ li{
     width:20px;
 }
 
-/* Topics  */
-.topics-1{
-    margin-left: 100px;
-}
+
 
 .about{
     background-color:whitesmoke;
@@ -156,4 +153,16 @@ section{
 
 .about-section{
     padding:40px;
+}
+
+.topics-1{
+    background-color: whitesmoke;
+    
+}
+.row1{
+    padding-top:40px;
+}
+.row{
+   padding-left:100px;
+   padding-bottom: 20px;
 }
