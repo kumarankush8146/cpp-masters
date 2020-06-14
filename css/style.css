@@ -166,3 +166,22 @@ section{
    padding-left:100px;
    padding-bottom: 20px;
 }
+/*for gettingstart page*/
+.gettingstart{
+    background-color:whitesmoke;
+    padding:10px;
+    box-shadow: 2px 2px 3px pink;
+}
+#programs{
+    color:blue;
+}
+/* for c++syntax page*/
+#syntax{
+    background-color:whitesmoke;
+    padding:10px;
+    box-shadow: 2px 2px 3px pink;
+}
+#syntax img{
+    width:300px;
+    height:200px;
+}
