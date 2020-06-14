@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css.map">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="index.html">
+                <img src="images/logo2.png" alt="logo">
+            </a>
+            <a class="navbar-brand" href="index.html">
+                <h1>Cpp Masters</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Course
+                        </a>
+                        <div class="dropdown-menu dp" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="topics.html">Topics</a>
+                            <a class="dropdown-item" href="programs.html">Programs</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- content of c++syntax.html-->
+    <div class="container">
+        <div id="syntax">
+
+            <div clas="container arr-cont">
+
+                <h2>What are arrays?</h2>
+                <p>In cases where there is a need to use several variables
+                    of same type, for storing,example, names or marks of ‘n’
+                    students we use a data structure called arrays. Arrays are
+                    basically collection of elements having same name and same data type.
+                    Using arrays, saves us from the time and effort
+                    required to declare each of the element of array individually.
+                    For example, an array containing 10 integer values of type int called foo could be represented as:
+                </p>
+                <div class="img-wrap">
+                    <img class="arr-img" src="images/array.png">
+                </div>
+            </div>
+
+
+            <div class="container arr-cont">
+
+                <h5>Creating an array</h5>
+
+                The syntax for declaring an array is:<br>
+                <span style="font-weight:bolder; font-size:19px; margin:0 3em 0 3em;">Data_type array_name [
+                    array_size ];</span>
+                <br><br>
+                <h5>Example :</h5>
+                <code>
+                float marks[5];</code>
+                <br>
+                Here, we declared an array, marks, of floating‐point type and size 5. Meaning, it can hold
+                5 floating­‐point values.Similarly, we can declare array of type int as follows:
+                <br>
+                <code>int age[10];</code>
+
+            </div>
+            <div class="container arr-cont">
+                <h3>How are arrays stored?</h3>
+
+                <p>
+                    The elements of arrays are stored contiguously, i.e.,
+                    at consecutive memory locations. The name of the array
+                    actually has the address of the first element of the
+                    array. Hence making it possible to access any element
+                    of the array using the starting address.
+                <h5>Example:</h5>
+                <code>int my_arr[ ] = {1, 2, 3, 4, 5};</code><br>
+                Suppose the starting address of an array is
+                5000,then address of second and third element
+                of array will be 5004, 5008 respectively and so on.</p>
+
+                <div class="img-wrap">
+                    <img class="arr-img" src="images/array2.webp">
+                </div>
+
+            </div>
+
+            <div class="container arr-cont">
+                <h3>Accessing elements of an array</h3>
+                <p>
+                    An element of array could be accessed using indices. Index of an array starts from 0 to n-­‐1,
+                    where n is the size of the array.
+                    <br>Syntax for accessing array element is :
+                    <br>
+                    <span style="font-weight:bolder; font-size:19px; margin:0 3em 0 3em;">Array_name[index];</span>
+                    <br>Suppose we
+                    declare array age of size 5.<br>
+                    <code>int age[10];</code>
+                    <br>
+                    <code>age[2] = 4 </code>&nbsp;&nbsp;// stores value 4 at index 2
+                    <br>
+                    Here the first element is age[0], second element is age[1] and so on.
+                </p>
+            </div>
+
+            <div class="container arr-cont">
+                <h3>Default values</h3>
+                Arrays must always be initialized. If the array is not initialized the respective memory
+                locations will contain garbage by default. Hence, any operation on uninitialized array will lead to
+                unexpected results.
+                <br><br>
+                <h5>Initializing array at the time of declaration</h5>
+                Elements in an array can be explicitly
+                initialized to specific values when it is declared, by enclosing those initial values in curly braces
+                {}.
+                <br><br>
+                <h5>Example:</h5>
+                <code>int age[5]= {5, 2, 10, 4, 12};</code><br>
+
+                Alternatively,<code> int age[ ] = {5, 2, 10, 4, 12};</code>
+                <br>If array is initialized like this‐<br>
+                <code>int age[10] = {5, 2, 10, 4, 12};</code>
+                <br>
+                Then, in memory an integer array of
+                size 10 will be declared. That is, a continuous memory block of 40 bytes (to hold 10 integers) will be
+                allocated. And first 5 values of age are provided, rest will be 0.
+                <br>Here,
+                <br>age[0] is equal to 5
+                <br>age[1] is equal to 2
+                <br>age[2] is equal to 10
+                <br>age[3] is equal to 4
+                <br>age[4] is equal to 12
+                <br>And age[5] to age[9] is equal to 0.
+                sizeof operatorsizeof is an operator used to determine the length of the array, i.e., the number of
+                elements in the array .
+                <br><br>
+                <h5>Example:</h5>
+
+                <code>
+                int main( )<br>
+                {int myArray[    ]    =    {5,    4,    3,    2,    1};<br>
+                int size    =    sizeof(myArray);<br>
+                cout<&lt;size;<br>
+                return 0;}<br>
+            </code>
+                <br>
+                <b>Output:</b>
+                20
+            </div>
+
+        </div>
+    </div>
+    <!--end of content-->
+    <footer class="panel-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p id="italic">“Any fool can write code that a computer can understand. Good programmers write
+                        code
+                        that
+                        humans can understand.”
+                        <hr>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p>Connect
+                        <br>
+
+                        <a class="instagram" href="https://www.instagram.com/" target="_blank">
+                            <img src="images/logo-instagram.svg" alt="logo">
+                        </a>
+                        <a class="facebook" href="https://www.facebook.com/" target="_blank">
+                            <img src="images/logo-facebook.svg" alt="logo">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <span class="bottom">
+                &copy;copyright 2020.All right reserved.<br>
+                cpp-masters
+            </span>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
