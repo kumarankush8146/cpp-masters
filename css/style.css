@@ -189,13 +189,13 @@ section{
 }
 
 .img-wrap{
-    width:500px;
-    height:200px;
+    max-width:100%;
+    height:auto;
 }
 
 .img-wrap>.arr-img{
-    width:90%;
-    height:100%;
+    max-width:100%;
+    height:auto;
     padding:auto;
 }
 /*for variable and datatype*/
