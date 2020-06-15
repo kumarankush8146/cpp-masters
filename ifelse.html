@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css.map">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="index.html">
+                <img src="images/logo2.png" alt="logo">
+            </a>
+            <a class="navbar-brand" href="index.html">
+                <h1>Cpp Masters</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Course
+                        </a>
+                        <div class="dropdown-menu dp" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="topics.html">Topics</a>
+                            <a class="dropdown-item" href="programs.html">Programs</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- content of ifelse.html--> 
+   <div class="container">
+      <div class="ifelse">
+        <h2 style="text-align: center;">If else Statement in C++</h2>
+        <p>
+        Sometimes we need to execute a block of statements only when a particular condition is met or not met. This is called decision making, as we are executing a certain code after making a decision in the program logic. For decision making in C++, we have four types of control statements (or control structures), which are as follows:
+        </p>
+        a) if statement<br>
+        b) nested if statement<br>
+        c) if-else statement<br>
+        d) if-else-if statement<br>
+        
+        <h2>If statement in C++</h2>
+        If statement consists a condition, followed by statement or a set of statements as shown below:
+        <section id="programs">
+        if(condition){<br>
+          Statement(s);<br>
+        }<br>
+        </section>
+        <p>The statements inside if parenthesis (usually referred as if body) gets executed only when the given condition is true. If the condition is false then the statements inside if body are completely ignored.
+        </p>
+        <h2 style="text-align: center">if statement flow diagram</h2>
+        <img class="imgc" src="/images/if statement.jpg" alt="ifelse">
+        <p>Example of if statement</p>
+        <section id="programs">
+        #include (iostream)<br>
+        using namespace std;<br>
+        int main(){<br>
+          int num=70;<br>
+          if( num < 100 ){<br>
+             /* This cout statement will only execute,<br>
+              * if the above condition is true<br>
+              */ <br>
+             cout<<"number is less than 100";<br>
+          }<br>
+        
+          if(num > 100){<br>
+             /* This cout statement will only execute,<br>
+              * if the above condition is true<br>
+              */ <br>
+             cout<<"number is greater than 100";<br>
+          }<br>
+          return 0;<br>
+        }
+    </section>
+        <h6>Output:</h6>
+        <section id="programs">
+        number is less than 100
+        </section>
+       <h2>Nested if statement in C++</h2>
+       <p> When there is an if statement inside another if statement then it is called the nested if statement.
+        </p>
+        The structure of nested if looks like this:
+        <section id="programs">
+        if(condition_1) {<br>
+           Statement1(s);<br>
+        
+           if(condition_2) {<br>
+              Statement2(s);<br>
+           }<br>
+        }<br>
+        </section>
+        <p>Statement1 would execute if the condition_1 is true. Statement2 would only execute if both the conditions( condition_1 and condition_2) are true.
+        </p>
+       <h2> Example of Nested if statement</h2>
+       <section id="programs">
+        #include (iostream)<br>
+        using namespace std;<br>
+        int main(){<br>
+           int num=90;<br>
+           /* Nested if statement. An if statement<br>
+            * inside another if body<br>
+            */<br>
+           if( num < 100 ){<br>
+              cout<<"number is less than 100"<<endl;<br>
+              if(num > 50){<br>
+                 cout<<"number is greater than 50";<br>
+              } <br>
+           }<br>
+           return 0;<br>
+        }<br>
+       </section>
+        <h6>Output:</h6>
+        <section id="programs">
+        number is less than 100<br>
+        number is greater than 50<br>
+        </section>
+        <h2>
+        If else statement in C++</h2>
+<p>
+        Sometimes you have a condition and you want to execute a block of code if condition is true and execute another piece of code if the same condition is false. This can be achieved in C++ using if-else statement.
+        <br>
+        <br>
+        This is how an if-else statement looks:
+</p>
+<section id="programs">
+        if(condition) {<br>
+           Statement(s);<br>
+        }<br>
+        else {<br>
+           Statement(s);<br>
+        }<br>
+        </section>
+        <p>
+        The statements inside “if” would execute if the condition is true, and the statements inside “else” would execute if the condition is false.
+        </p>
+        <h6>Flow diagram of if-else</h6>
+                 <h2>If else flow diagram</h2>
+        <img class="imgc" src="/images/if else.png" alt="ifelse">
+       <h6> Example of if-else statement</h6>
+        <section id="programs">
+            #include (iostream)<br>
+        using namespace std;<br>
+        int main(){<br>
+           int num=66;<br>
+           if( num < 50 ){<br>
+              //This would run if above condition is true<br>
+              cout<<"num is less than 50";<br>
+           }<br>
+           else {<br>
+              //This would run if above condition is false<br>
+              cout<<"num is greater than or equal 50";<br>
+           }<br>
+           return 0;<br>
+        }<br>
+        </section>
+        <h6>Output:</h6>
+        <section id="programs">
+        num is greater than or equal 50
+        </section>
+       <h2> if-else-if Statement in C++</h2>
+       <p> if-else-if statement is used when we need to check multiple conditions. In this control structure we have only one “if” and one “else”, however we can have multiple “else if” blocks. This is how it looks:
+        </p>
+        <section id="programs">
+        if(condition_1) {<br>
+           /*if condition_1 is true execute this*/<br>
+           statement(s);<br>
+        }<br>
+        else if(condition_2) {<br>
+           /* execute this if condition_1 is not met and<br>
+            * condition_2 is met<br>
+            */<br>
+           statement(s);<br>
+        }<br>
+        else if(condition_3) {<br>
+           /* execute this if condition_1 & condition_2 are<br>
+            * not met and condition_3 is met<br>
+            */<br>
+           statement(s);
+           <br>
+        }<br>
+        .<br>
+        .<br>
+        .<br>
+        else {<br>
+           /* if none of the condition is true<br>
+            * then these statements gets executed<br>
+            */<br>
+           statement(s);<br>
+        }<br>
+        </section>
+        <p>
+        Note: The most important point to note here is that in if-else-if, as soon as the condition is met, the corresponding set of statements get executed, rest gets ignored. If none of the condition is met then the statements inside “else” gets executed.
+        </p>
+        <h2>Example of if-else-if</h2>
+        <section id="programs">
+        #include (iostream)<br>
+        using namespace std;<br>
+        int main(){<br>
+           int num;<br>
+           cout<<"Enter an integer number between 1 & 99999: ";<br>
+           cin>>num;<br>
+           if(num <100 && num>=1) {<br>
+              cout<<"Its a two digit number";<br>
+           }<br>
+           else if(num <1000 && num>=100) {<br>
+              cout<<"Its a three digit number";<br>
+           }<br>
+           else if(num <10000 && num>=1000) {<br>
+              cout<<"Its a four digit number";<br>
+           }<br>
+           else if(num <100000 && num>=10000) {<br>
+              cout<<"Its a five digit number";<br>
+           }<br>
+           else {<br>
+              cout<<"number is not between 1 & 99999";<br>
+           }<br>
+           return 0;<br>
+        }<br>
+    </section>
+        <h6>Output:</h6>
+        <section id="programs">
+        Enter an integer number between 1 & 99999: 8976<br>
+        Its a four digit number<br>
+        </section>
+      </div>
+   </div>
+    <!--end of content-->
+    <footer class="panel-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p id="italic">“Any fool can write code that a computer can understand. Good programmers write code
+                        that
+                        humans can understand.”
+                        <hr>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p>Connect
+                        <br>
+
+                        <a class="instagram" href="https://www.instagram.com/" target="_blank">
+                            <img src="images/logo-instagram.svg" alt="logo">
+                        </a>
+                        <a class="facebook" href="https://www.facebook.com/" target="_blank">
+                            <img src="images/logo-facebook.svg" alt="logo">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <span class="bottom">
+                &copy;copyright 2020.All right reserved.<br>
+                cpp-masters
+            </span>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
