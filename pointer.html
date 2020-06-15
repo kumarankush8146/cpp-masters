@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css.map">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="index.html">
+                <img src="images/logo2.png" alt="logo">
+            </a>
+            <a class="navbar-brand" href="index.html">
+                <h1>Cpp Masters</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Course
+                        </a>
+                        <div class="dropdown-menu dp" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="topics.html">Topics</a>
+                            <a class="dropdown-item" href="programs.html">Programs</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- content of c++syntax.html-->
+    <div class="container">
+        <div id="syntax">
+
+
+
+
+
+
+
+
+            <div class="container arr-cont">
+
+                <h3>Address of Operator(&)</h3>
+
+                The address of a variable can be obtained by preceding the name of a variable with an ampersand sign
+                (&), known as address-­‐of operator. For example:
+                <br>
+                <code>cout << (&var) << endl;</code>
+                <br>This would print address of variable var; by preceding the name of the
+                variable var with the address-­‐of operator(&), we are no longer printing the content of the
+                variable itself, but its address.
+            </div>
+            <div class="container arr-cont">
+                <h3>What are Pointers?</h3>
+
+                <p>
+
+                    Pointers are one of the most important aspects of C++. Pointers are
+                    another type of variables in CPP and these variables store addresses of other variables.
+                    They have data type just like variables, for example an integer type pointer can hold the address of
+                    an integer variable and an character type pointer can hold the address of char variable.
+                <h5>Syntax of pointer</h5>
+                <span style="font-weight:bolder; font-size:19px; margin:0 3em 0 3em;">data_type *pointer_name;</span>
+
+                <br>
+                While creating a pointer variable, we need to mention the type of data whose address is stored in the
+                pointer. e.g. in order to create a pointer which stores address of an integer, we need to
+                write:
+                <br>
+                <code>int* p;</code>
+
+
+            </div>
+
+            <div class="container arr-cont">
+                <h3>Using Pointers in C++</h3>
+                <p>
+                    There are few important operations, which we will do with the pointers very frequently.
+                    <br>(a) We define a pointer variable.
+                    <br>(b) Assign the address of a variable to a pointer.
+                    <br>(c) Finally access the value at the address available in the pointer variable. This is done by
+                    using
+                    unary operator * that returns the value of the variable located at the address specified by its
+                    operand. Following example
+                    makes use of these operations −<br>
+                    <code>
+                    #include &lt;iostream&gt;<br>
+
+                        using namespace std;<br>
+
+                        int main () {<br>
+                        int var = 20; // actual variable declaration.<br>
+                        int *ip; // pointer variable<br>
+
+                        ip = &var; // store address of var in pointer variable<br>
+
+                        cout << "Value of var variable: " ;<br>
+                         cout << var << endl;<br>
+                          // print the address stored in ip
+                            pointer variable<br> 
+                            cout << "Address stored in ip variable: " ;<br>
+                             cout << ip << endl; 
+                             <br>// access
+                            the value at the address available in pointer 
+                            <br>cout << "Value of *ip variable: " ; 
+                            <br>cout <<*ip << endl; 
+                            <br>return 0;
+                        <br> } 
+                        </code>
+                    <br>When the above code is compiled and executed, it produces result something as follows −
+
+                    <br>Value of var variable: 20
+                    <br>Address stored in ip variable: 0xbfc601ac
+                    <br>Value of *ip variable: 20
+                    <br>
+
+                <h3>Null Pointer</h3>
+                Consider the following statement –
+                <br>int *p;
+                <br>Here we have created a pointer variable that
+                contains garbage value.In order to dereferencethe pointer, we will try reading out the value at the
+                garbage stored in the pointer. This will lead to unexpected results or segmentation faults. Hence we
+                should never leave a pointer uninitialized and instead initialize it to NULL, so as to avoid
+                unexpected behavior.
+                <br>int *p = NULL; // NULL is a constant with a value 0
+                <br>int *q = 0; // Same as above
+                <br>So
+                now if we try to dereferencethe pointer we will get segmentation fault as 0 is areserved memory
+                address.
+
+                </p>
+            </div>
+
+            <div class="container arr-cont">
+                <h3>Pointer and Arrays</h3>
+                Pointers and arrays are intricately linked. An Array is actually a pointer that points to the first
+                element of the array.Because the array variable is a pointer, you candereference it, which returns array
+                element 0.
+                <br><br>
+                Consider the following code –
+                <br>int a[]= {1,2,3,4,5};
+                <br>int *b = &a[0];
+                <br>cout << b<< endl; <br>cout << a<< endl; <br>cout << *b << endl; // This will print 1 <br>Both b and
+                            a will print same same address as they are referring
+                            to first element ofthe array.
+                            <br>Also in arrays ‐ a[i]is same as *(a + i). <br><br>
+
+
+                            <code>
+                                Consider    anexample    for    the    same–
+                                <br>#include &lt;iostream&gt;
+                                   <br> using    namespace    std;
+                                   
+                                    <br>int    main(){
+                                       
+                                    <br>    <int    a[5]    =    {1,2,3,4,5};
+                                    <br>   cout &lt;&lt;    *(a    +    2)    &lt;&lt;   endl;
+                                   
+                                    <br>}
+                                    
+            </code>
+                            <br>
+
+                            <b> Output:</b>
+                            3
+            </div>
+
+            <div class="container arr-cont">
+                <h4>Differences between arrays and pointers: </h4>
+                <b>1.&nbsp;the sizeof operator:</b>
+                <br>
+                sizeof(array) returns the amount of memory used by all elements in arraywhereassizeof(pointer) only
+                returns the amount of memory used by thepointer variable itself.
+                Consider the following code –
+                <code>
+                    Consider    anexample    for    the    same–
+                    <br>#include &lt;iostream&gt;
+                       <br> using    namespace    std;
+                       
+                        <br>int    main(){
+                           
+                        <br> int    a[5]    =    {1,2,3,4,5};
+                        <br> cout <&lt;sizeof(a)<&lt;endl;
+                       <br>cout <&lt;sizeof(b)<&lt;endl;
+                        <br>
+                           }
+                        
+                </code>
+                <br>
+                <b> Output:</b>
+                <br>20
+                <br>8 // Size of pointer is compiler dependent. Here it is 8.
+            </div>
+            <br>
+
+            <b>2.&nbsp;the & operator:</b>
+            <br>In the example above &a is an alias for &a[0] and returns the address of the first element in
+            array & b returns the address of pointer.
+            <br>
+            <br>
+            <b>3.Pointer variable can be assigned a value whereas array variable cannot be</b>
+            <br>int a[10];
+            <br>int *p;
+            <br>p=a; &nbsp;//legal
+            <br>a=p; &nbsp;//illegal
+            <br>
+            <br>
+            <b>4. Arithmetic on pointer variable is allowed, but not allowed onarray variable.</b>
+            <br>p++; //Legal
+            <br>a++; //illegal
+        </div>
+
+
+    </div>
+    </div>
+    <!--end of content-->
+    <footer class="panel-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p id="italic">“Any fool can write code that a computer can understand. Good programmers write
+                        code
+                        that
+                        humans can understand.”
+                        <hr>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p>Connect
+                        <br>
+
+                        <a class="instagram" href="https://www.instagram.com/" target="_blank">
+                            <img src="images/logo-instagram.svg" alt="logo">
+                        </a>
+                        <a class="facebook" href="https://www.facebook.com/" target="_blank">
+                            <img src="images/logo-facebook.svg" alt="logo">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <span class="bottom">
+                &copy;copyright 2020.All right reserved.<br>
+                cpp-masters
+            </span>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
