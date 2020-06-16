@@ -173,7 +173,7 @@ section{
     box-shadow: 2px 2px 3px pink;
 }
 #programs{
-    color:blue;
+    color:palevioletred;
 }
 /* for c++syntax page*/
 #syntax{
@@ -230,6 +230,11 @@ table,th,td{
 /*for switch case*/
 .switch{
     background-color: whitesmoke;
+    padding:10px;
+}
+/*for function*/
+.function{
+    background-color:whitesmoke;
     padding:10px;
 }
 
