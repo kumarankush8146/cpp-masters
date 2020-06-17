@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css.map">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="index.html">
+                <img src="images/logo2.png" alt="logo">
+            </a>
+            <a class="navbar-brand" href="index.html">
+                <h1>Cpp Masters</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Course
+                        </a>
+                        <div class="dropdown-menu dp" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="topics.html">Topics</a>
+                            <a class="dropdown-item" href="programs.html">Programs</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- content of ifelse.html--> 
+   <div class="container">
+     <div class="function">
+       <h1 style="text-align: center;"> Types of User-defined Functions in C++</h1>
+        <p>In this tutorial, you will learn about different approaches you can take to solve a single problem using functions.
+        </p>
+        <p>For better understanding of arguments and return in functions, user-defined functions can be categorised as:
+        </p>
+        <ul>
+       <li> Function with no argument and no return value
+        </li>
+        <li>Function with no argument but return value</li>
+        <li>Function with argument but no return value</li>
+        <li>Function with argument and return value</li>
+        </ul>
+        <p>Consider a situation in which you have to check prime number. This problem is solved below by making user-defined function in 4 different ways as mentioned above.
+        </p>
+        <h2>Example 1: No arguments passed and no return value</h2>
+       <div data-pym-src="https://www.jdoodle.com/embed/v0/28s0"></div>
+        <p>In the above program, prime() is called from the main() with no arguments.
+        <br>
+        prime() takes the positive number from the user and checks whether the number is a prime number or not.
+        <br>
+        Since, return type of prime() is void, no value is returned from the function.
+        </p>
+        <h2>Example 2: No arguments passed but a return value</h2>
+       <div data-pym-src="https://www.jdoodle.com/embed/v0/28s1"></div>
+       <p> In the above program, prime() function is called from the main() with no arguments.
+        <br>
+        prime() takes a positive integer from the user. Since, return type of the function is an int, it returns the inputted number from the user back to the calling main() function.
+        <br>
+        Then, whether the number is prime or not is checked in the main() itself and printed onto the screen.
+
+        </p>
+       <h2> Example 3: Arguments passed but no return value</h2>
+       <div data-pym-src="https://www.jdoodle.com/embed/v0/28s3"></div>
+       <p> In the above program, positive number is first asked from the user which is stored in the variable num.
+        <br>
+        Then, num is passed to the prime() function where, whether the number is prime or not is checked and printed.
+        <br>
+        Since, the return type of prime() is a void, no value is returned from the function.
+        </p>
+        <h2>Example 4: Arguments passed and a return value.</h2>
+        <div data-pym-src="https://www.jdoodle.com/embed/v0/28s4"></div>
+        <p>In the above program, a positive integer is asked from the user and stored in the variable num.
+        <br>
+        Then, num is passed to the function prime() where, whether the number is prime or not is checked.
+        <br>
+        Since, the return type of prime() is an int, 1 or 0 is returned to the main() calling function. If the number is a prime number, 1 is returned. If not, 0 is returned.
+        <br>
+        Back in the main() function, the returned 1 or 0 is stored in the variable flag, and the corresponding text is printed onto the screen.
+    </p> 
+    <h2>Which method is better?</h2>
+<p>All four programs above gives the same output and all are technically correct program.
+
+There is no hard and fast rule on which method should be chosen.
+
+The particular method is chosen depending upon the situation and how you want to solve a problem.</p>
+    </div>
+   </div>
+    <!--end of content-->
+    <footer class="panel-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p id="italic">“Any fool can write code that a computer can understand. Good programmers write code
+                        that
+                        humans can understand.”
+                        <hr>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p>Connect
+                        <br>
+
+                        <a class="instagram" href="https://www.instagram.com/" target="_blank">
+                            <img src="images/logo-instagram.svg" alt="logo">
+                        </a>
+                        <a class="facebook" href="https://www.facebook.com/" target="_blank">
+                            <img src="images/logo-facebook.svg" alt="logo">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <span class="bottom">
+                &copy;copyright 2020.All right reserved.<br>
+                cpp-masters
+            </span>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
+</body>
+
+</html>

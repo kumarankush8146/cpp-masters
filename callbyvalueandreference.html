@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css.map">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="index.html">
+                <img src="images/logo2.png" alt="logo">
+            </a>
+            <a class="navbar-brand" href="index.html">
+                <h1>Cpp Masters</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Course
+                        </a>
+                        <div class="dropdown-menu dp" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="topics.html">Topics</a>
+                            <a class="dropdown-item" href="programs.html">Programs</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- content of ifelse.html--> 
+   <div class="container">
+     <div class="function">
+       <h2 style="text-align: center;"> Difference between Call by Value and Call by Reference</h2>
+    <p> Functions can be invoked in two ways: Call by Value or Call by Reference. These two ways are generally differentiated by the type of values passed to them as parameters.
+        <br>
+        The parameters passed to function are called actual parameters whereas the parameters received by function are called formal parameters.
+        </p>
+       <h4> Call By Value:</h4><p> In this parameter passing method, values of actual parameters are copied to function’s formal parameters and the two types of parameters are stored in different memory locations. So any changes made inside functions are not reflected in actual parameters of caller.
+        </p>
+        <h4>Call by Reference:</h4><p> Both the actual and formal parameters refer to same locations, so any changes made inside the function are actually reflected in actual parameters of caller.
+    </p>
+    <table>
+        <tr>
+        <th style="background-color: aqua;">CALL BY VALUE</th>
+        <th style="background-color: aqua;">CALL BY REFERENCE</th>
+        </tr>
+        <tr><td>While calling a function, we pass values of variables to it. Such functions are known as “Call By Values”.</td>
+        <td>While calling a function, instead of passing the values of variables, we pass address of variables(location of variables) to the function known as “Call By References.</td>
+        </tr>
+        <tr>
+            <td>In this method, the value of each variable in calling function is copied into corresponding dummy variables of the called function.</td>
+        <td>In this method, the address of actual variables in the calling function are copied into the dummy variables of the called function.</td>
+        </tr>
+        <tr><td>With this method, the changes made to the dummy variables in the called function have no effect on the values of actual variables in the calling function.</td>
+        <td>With this method, using addresses we would have an access to the actual variables and hence we would be able to manipulate them.</td>
+         </tr>
+         <tr>
+             <td>
+                 <div data-pym-src="https://www.jdoodle.com/embed/v0/28s5"></div>
+             </td>
+             <td>
+                 <div data-pym-src="https://www.jdoodle.com/embed/v0/28s6"></div>
+             </td>
+         </tr>
+         <tr>
+             <td>Thus actual values of a and b remain unchanged even after exchanging the values of x and y.</td>
+             <td>Thus actual values of a and b get changed after exchanging values of x and y.</td>
+         </tr>
+         <tr>
+             <td>In call by values we cannot alter the values of actual variables through function calls.</td>
+             <td>In call by reference we can alter the values of variables through function calls.</td>
+         </tr>
+         <tr>
+             <td>Values of variables are passes by Simple technique.</td>
+             <td>Pointer variables are necessary to define to store the address values of variables.</td>
+         </tr>
+    </table>
+        </div>
+   </div>
+    <!--end of content-->
+    <footer class="panel-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p id="italic">“Any fool can write code that a computer can understand. Good programmers write code
+                        that
+                        humans can understand.”
+                        <hr>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p>Connect
+                        <br>
+
+                        <a class="instagram" href="https://www.instagram.com/" target="_blank">
+                            <img src="images/logo-instagram.svg" alt="logo">
+                        </a>
+                        <a class="facebook" href="https://www.facebook.com/" target="_blank">
+                            <img src="images/logo-facebook.svg" alt="logo">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <span class="bottom">
+                &copy;copyright 2020.All right reserved.<br>
+                cpp-masters
+            </span>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
+</body>
+
+</html>
