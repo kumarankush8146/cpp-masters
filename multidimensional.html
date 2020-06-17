@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css.map">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="index.html">
+                <img src="images/logo2.png" alt="logo">
+            </a>
+            <a class="navbar-brand" href="index.html">
+                <h1>Cpp Masters</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Course
+                        </a>
+                        <div class="dropdown-menu dp" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="topics.html">Topics</a>
+                            <a class="dropdown-item" href="programs.html">Programs</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- content of ifelse.html-->
+    <div class="container">
+        <div class="function">
+            <h1 style="text-align: center;">C++ Multidimensional Arrays</h1>
+            <p>In this article, you'll learn about multi-dimensional arrays in C++. More specifically, how to declare
+                them, access them and use them efficiently in your program.
+            </p>
+            <p> In C++, you can create an array of an array known as multi-dimensional array.
+                <br>For example:
+            <section id="programs">
+                int x[3][4];</section>
+
+            </p>
+            <p>Here, x is a two dimensional array. It can hold a maximum of 12 elements.<br>
+            </p>
+
+            <img class="center" src="images/two-dimensional-array.jpg">
+            <p>Three dimensional array also works in a similar way. For example:
+
+            <section id="programs">
+                float x[2][4][3];</section>
+            <br>
+
+            This array x can hold a maximum of 24 elements. You can think this example as: Each of the 2 elements
+            can hold 4 elements, which makes 8 elements and each of those 8 elements can hold 3 elements. Hence,
+            total number of elements this array can hold is 24.
+            </p>
+
+            <h2>Multidimensional Array Initialisation</h2>
+            <p>You can initialise a multidimensional array in more than one way.
+            </p>
+            <h4>Initialisation of two dimensional array</h4>
+            <section id="programs">
+                int test[2][3] = {2, 4, -5, 9, 0, 9};</section>
+
+            Better way to initialise this array with same array elements as above.
+            <section id="programs">
+                int test[2][3] = { {2, 4, 5}, {9, 0 0}};
+            </section>
+            <h4>Initialisation of three dimensional array</h4>
+            <section id="programs">
+                int test[2][3][4] = {3, 4, 2, 3, 0, -3, 9, 11, 23, 12, 23,
+                2, 13, 4, 56, 3, 5, 9, 3, 5, 5, 1, 4, 9};
+            </section>
+            Better way to initialise this array with same elements as above.
+            <section id="programs">
+                int test[2][3][4] = {
+                { {3, 4, 2, 3}, {0, -3, 9, 11}, {23, 12, 23, 2} },
+                { {13, 4, 56, 3}, {5, 9, 3, 5}, {3, 1, 4, 9} }
+                };
+            </section>
+            <br>
+            <h5>
+                Example 1: Two Dimensional Array</h5>
+
+            C++ Program to display all elements of an initialised two dimensional array.
+            <div data-pym-src="https://www.jdoodle.com/embed/v0/28uy"></div>
+            <br>
+            <h5>Example 3: Three Dimensional Array</h5>
+            <div data-pym-src="https://www.jdoodle.com/embed/v0/28uA"></div>
+
+        </div>
+    </div>
+    <!--end of content-->
+    <footer class="panel-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p id="italic">“Any fool can write code that a computer can understand. Good programmers write code
+                        that
+                        humans can understand.”
+                        <hr>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p>Connect
+                        <br>
+
+                        <a class="instagram" href="https://www.instagram.com/" target="_blank">
+                            <img src="images/logo-instagram.svg" alt="logo">
+                        </a>
+                        <a class="facebook" href="https://www.facebook.com/" target="_blank">
+                            <img src="images/logo-facebook.svg" alt="logo">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <span class="bottom">
+                &copy;copyright 2020.All right reserved.<br>
+                cpp-masters
+            </span>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
+</body>
+
+</html>
