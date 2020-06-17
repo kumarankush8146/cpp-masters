@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css.map">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="index.html">
+                <img src="images/logo2.png" alt="logo">
+            </a>
+            <a class="navbar-brand" href="index.html">
+                <h1>Cpp Masters</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Course
+                        </a>
+                        <div class="dropdown-menu dp" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="topics.html">Topics</a>
+                            <a class="dropdown-item" href="programs.html">Programs</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- content of ifelse.html--> 
+   <div class="container">
+     <div class="function">
+       <h1 style="text-align: center;"> Function overloading in C++</h1>
+        <p>
+       <b> Function overloading</b> is a C++ programming feature that allows us to have more than one function having same name but different parameter list, when I say parameter list, it means the data type and sequence of the parameters, for example the parameters list of a function myfuncn(int a, float b) is (int, float) which is different from the function myfuncn(float a, int b) parameter list (float, int). Function overloading is a <b>compile-time polymorphism.</b>
+        </p>
+    <p>
+        Now that we know what is parameter list lets see the rules of overloading: we can have following functions in the same scope.
+    </p>
+    <section id="programs">
+        sum(int num1, int num2)<br>
+        sum(int num1, int num2, int num3)<br>
+        sum(int num1, double num2)
+        </section>
+        <p> The easiest way to remember this rule is that the parameters should qualify any one or more of the following conditions, they should have different type, number or sequence of parameters.
+        </p>
+        <h5>For example:</h5>
+        <p>These two functions have different parameter type:
+        </p>
+        <section id="programs">
+        sum(int num1, int num2)<br>
+        sum(double num1, double num2)
+        </section>
+       <p> These two have different number of parameters:
+        </p>
+        <section id="programs">
+        sum(int num1, int num2)
+        sum(int num1, int num2, int num3)
+        </section>
+        <p>These two have different sequence of parameters:
+        </p>
+        <section id="programs">
+        sum(int num1, double num2)<br>
+        sum(double num1, int num2)
+        </section>
+        <p>All of the above three cases are valid case of overloading. We can have any number of functions, just remember that the parameter list should be different. For example:
+        </p>
+        <section id="programs">
+        int sum(int, int)<br>
+        double sum(int, int)
+        </section>
+        <p>This is not allowed as the parameter list is same. Even though they have different return types, its not valid.
+        </p>
+        <h2>Function overloading Example</h2>
+        <p>Lets take an example to understand function overloading in C++.
+        </p>
+       <div data-pym-src="https://www.jdoodle.com/embed/v0/28sV"></div>
+        <h2>Function overloading Example 2</h2>
+        <p>As I mentioned in the beginning of this guide that functions having different return types and same parameter list cannot be overloaded. However if the functions have different parameter list then they can have same or different return types to be eligible for overloading. In short the return type of a function
+        does not play any role in function overloading. All that matters is the parameter list of function.
+        </p>
+       <div data-pym-src="https://www.jdoodle.com/embed/v0/28sX"></div>
+       <p>this program is completely understandable after the reading the c++ classes and objects.</p>
+        <h2>Advantages of Function overloading</h2>
+        <p>The main advantage of function overloading is to the improve the code readability and allows code reusability. In the example 1, we have seen how we were able to have more than one function for the same task(addition) with different parameters, this allowed us to add two integer numbers as well as three integer numbers, if we wanted we could have some more functions with same name and four or five arguments.
+        Imagine if we didn’t have function overloading, we either have the limitation to add only two integers or we had to write different name functions for the same task addition, this would reduce the code readability and reusability.
+    </p>    
+    </div>
+   </div>
+    <!--end of content-->
+    <footer class="panel-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p id="italic">“Any fool can write code that a computer can understand. Good programmers write code
+                        that
+                        humans can understand.”
+                        <hr>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p>Connect
+                        <br>
+
+                        <a class="instagram" href="https://www.instagram.com/" target="_blank">
+                            <img src="images/logo-instagram.svg" alt="logo">
+                        </a>
+                        <a class="facebook" href="https://www.facebook.com/" target="_blank">
+                            <img src="images/logo-facebook.svg" alt="logo">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <span class="bottom">
+                &copy;copyright 2020.All right reserved.<br>
+                cpp-masters
+            </span>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
+</body>
+
+</html>
