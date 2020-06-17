@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css.map">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="index.html">
+                <img src="images/logo2.png" alt="logo">
+            </a>
+            <a class="navbar-brand" href="index.html">
+                <h1>Cpp Masters</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Course
+                        </a>
+                        <div class="dropdown-menu dp" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="topics.html">Topics</a>
+                            <a class="dropdown-item" href="programs.html">Programs</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- content of ifelse.html-->
+    <div class="container">
+        <div class="function">
+            <h1 style="text-align: center;">C++ Strings</h1>
+            C++ provides following two types of string representations −
+            <ul>
+                <li>The C-style character string.</li>
+                <li>The string class type introduced with Standard C++.</li>
+            </ul>
+
+            <h3>The C-Style Character String</h3>
+
+            <p> The C-style character string originated within the C language and continues to be supported within C++.
+                This string is actually a one-dimensional array of characters which is terminated by a null character
+                '\0'. Thus a null-terminated string contains the characters that comprise the string followed by a null.
+            </p>
+
+            <p>
+                The following declaration and initialization create a string consisting of the word "Hello". To hold the
+                null character at the end of the array, the size of the character array containing the string is one
+                more than the number of characters in the word "Hello."
+            <section id="programs">
+                char greeting[6] = {'H', 'e', 'l', 'l', 'o', '\0'};
+            </section>
+            </p>
+            If you follow the rule of array initialization, then you can write the above statement as follows −
+            <section id="programs">char greeting[] = "Hello";</section>
+            Following is the memory presentation of above defined string in C/C++ −
+            <p>
+                <img class="center" src="images/string.jpg">
+            </p>
+            <br>
+            <p>Actually, you do not place the null character at the end of a string constant. The C++ compiler
+                automatically places the '\0' at the end of the string when it initializes the array. Let us try to
+                print above-mentioned string −
+            <div data-pym-src="https://www.jdoodle.com/embed/v0/28uF"></div>
+            </p>
+            C++ supports a wide range of functions that manipulate null-terminated strings −
+            <br><br>
+            <div class="img-cont">
+                <img src="images/stringFun.png"><br>
+            </div>
+            <br>
+            Following example makes use of few of the above-mentioned functions −
+            <p>
+            <div data-pym-src="https://www.jdoodle.com/embed/v0/28uM"></div>
+            </p>
+
+            <h3>The String Class in C++</h3>
+            The standard C++ library provides a string class type that supports all the operations mentioned above,
+            additionally much more functionality. Let us check the following example −
+            <div data-pym-src="https://www.jdoodle.com/embed/v0/28vf"></div>
+
+        </div>
+    </div>
+    <!--end of content-->
+    <footer class="panel-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p id="italic">“Any fool can write code that a computer can understand. Good programmers write code
+                        that
+                        humans can understand.”
+                        <hr>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p>Connect
+                        <br>
+
+                        <a class="instagram" href="https://www.instagram.com/" target="_blank">
+                            <img src="images/logo-instagram.svg" alt="logo">
+                        </a>
+                        <a class="facebook" href="https://www.facebook.com/" target="_blank">
+                            <img src="images/logo-facebook.svg" alt="logo">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <span class="bottom">
+                &copy;copyright 2020.All right reserved.<br>
+                cpp-masters
+            </span>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
+</body>
+
+</html>
