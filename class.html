@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css.map">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://www.freepngimg.com/download/c++/6-2-c++-free-download-png.png"
+        type="image/x-icon">
+    <title>cpp-masters</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="index.html">
+                <img src="images/logo2.png" alt="logo">
+            </a>
+            <a class="navbar-brand" href="index.html">
+                <h1>Cpp Masters</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Course
+                        </a>
+                        <div class="dropdown-menu dp" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="topics.html">Topics</a>
+                            <a class="dropdown-item" href="programs.html">Programs</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- content of ifelse.html-->
+    <div class="container">
+        <div class="function">
+            <h1 style="text-align: center;">C++ Classes and Objects</h1>
+            <p>C++ is an object-oriented programming language.</p>
+            <p>
+                Everything in C++ is associated with classes and objects, along with its attributes and methods. For
+                example: in real life, a car is an object. The car has attributes, such as weight and color, and
+                methods,
+                such as drive and brake.</p>
+            <p>
+                Attributes and methods are basically variables and functions that belongs to the class. These are often
+                referred to as "class members".</p>
+            <p>
+                A class is a user-defined data type that we can use in our program, and it works as an object
+                constructor,
+                or a "blueprint" for creating objects.</p>
+            <h3>Create a Class</h3>
+            <p> To create a class, use the class keyword:<br>
+                Example</p>
+
+            Create a class called "MyClass":<br>
+            <section id="programs">
+                class MyClass { // The class<br>
+                public: // Access specifier<br>
+                int myNum; // Attribute (int variable)<br>
+                string myString; // Attribute (string variable)<br>
+                };
+            </section>
+
+            <h4>Example Explanation</h4>
+            <ul>
+
+                <li>The class keyword is used to create a class called MyClass.</li>
+                <li>The public keyword is an access specifier, which specifies that members (attributes and methods) of
+                    the
+                    class are accessible from outside the class. You will learn more about access specifiers later.</li>
+                <li>Inside the class, there is an integer variable myNum and a string variable myString. When variables
+                    are
+                    declared within a class, they are called attributes.</li>
+                <li>At last, end the class definition with a semicolon ;.</li>
+
+            </ul>
+            <h3>Create an Object</h3>
+            <p>
+                In C++, an object is created from a class. We have already created the class named MyClass, so now we
+                can use this to create objects.
+            </p>
+
+            <p>
+                To create an object of MyClass, specify the class name, followed by the object name.
+            </p>
+            <p>
+                To access the class attributes (myNum and myString), use the dot syntax (.) on the object:
+            </p>
+
+            <div data-pym-src="https://www.jdoodle.com/embed/v0/28AR"></div>
+
+            <h3>Multiple Objects</h3>
+            <p>You can create multiple objects of one class:</p>
+            <b>Example:</b>
+            <div data-pym-src="https://www.jdoodle.com/embed/v0/28Bi"></div>
+
+        </div>
+    </div>
+    <!--end of content-->
+    <footer class="panel-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p id="italic">“Any fool can write code that a computer can understand. Good programmers write code
+                        that
+                        humans can understand.”
+                        <hr>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p>Connect
+                        <br>
+
+                        <a class="instagram" href="https://www.instagram.com/" target="_blank">
+                            <img src="images/logo-instagram.svg" alt="logo">
+                        </a>
+                        <a class="facebook" href="https://www.facebook.com/" target="_blank">
+                            <img src="images/logo-facebook.svg" alt="logo">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <span class="bottom">
+                &copy;copyright 2020.All right reserved.<br>
+                cpp-masters
+            </span>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
+</body>
+
+</html>

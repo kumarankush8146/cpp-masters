@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css.map">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://www.freepngimg.com/download/c++/6-2-c++-free-download-png.png"
+        type="image/x-icon">
+    <title>cpp-masters</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="index.html">
+                <img src="images/logo2.png" alt="logo">
+            </a>
+            <a class="navbar-brand" href="index.html">
+                <h1>Cpp Masters</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Course
+                        </a>
+                        <div class="dropdown-menu dp" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="topics.html">Topics</a>
+                            <a class="dropdown-item" href="programs.html">Programs</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- content of ifelse.html-->
+    <div class="container">
+        <div class="function">
+            <h1 style="text-align: center;">Constructors and Destructors</h1>
+            <p>Constructors are special class functions which performs initialization of every object. The Compiler
+                calls the Constructor whenever an object is created. Constructors initialize values to object members
+                after storage is allocated to the object.</p>
+            <p>
+                Whereas, Destructor on the other hand is used to destroy the class object.
+            </p>
+            <p>
+                Let's start with Constructors first, following is the syntax of defining a constructor function in a
+                class:
+            </p>
+
+            <section id="programs">
+                class A<br>
+                {<br>
+                public:<br>
+                int x;<br>
+                // constructor<br>
+                A()<br>
+                {<br>
+                // object initialization<br>
+                }<br>
+                };
+            </section>
+            <p>
+                While defining a contructor you must remeber that the name of constructor will be same as the name of
+                the class, and contructors will never have a return type.</p>
+            <p>
+                Constructors can be defined either inside the class definition or outside class definition using class
+                name and scope resolution :: operator.
+            </p>
+            <section id="programs">
+                class A<br>
+                {<br>
+                public:<br>
+                int i;<br>
+                A(); // constructor declared<br>
+                };<br>
+
+                // constructor definition<br>
+                A::A()<br>
+                {<br>
+                i = 1;<br>
+                }
+            </section>
+            <p>
+                Types of Constructors in C++
+            </p>
+
+            <p>Constructors are of three types:</p>
+            <ol>
+                <li>Default Constructor</li>
+                <li>Parametrized Constructor</li>
+                <li>Copy COnstructor</li>
+            </ol>
+
+            <h3>Default Constructors</h3>
+            <p>
+                Default constructor is the constructor which doesn't take any argument. It has no parameter.
+            </p>
+            <b>
+                Syntax:</b>
+            <section id="programs">
+                class_name(parameter1, parameter2, ...)<br>
+                {<br>
+                // constructor Definition<br>
+                }<br>
+            </section>
+            <b>Example:</b>
+            <div data-pym-src="https://www.jdoodle.com/embed/v0/28Bm"></div>
+
+            <p>In this case, as soon as the object is created the constructor is called which initializes its data
+                members.
+            </p>
+            <p>
+                A default constructor is so important for initialization of object members, that even if we do not
+                define a constructor explicitly, the compiler will provide a default constructor implicitly.</p>
+
+            <h3>Parameterized Constructors</h3>
+            <p>
+                These are the constructors with parameter. Using this Constructor you can provide different values to
+                data members of different objects, by passing the appropriate values as argument.
+            </p>
+            <b>
+                For example:
+            </b>
+            <div data-pym-src="https://www.jdoodle.com/embed/v0/28Bp"></div>
+            <h3>Copy Constructors</h3>
+            <p>Copy Constructor is a type of constructor which is used to create a copy of an already existing object of
+                a class type. It is usually of the form X (X&), where X is the class name. The compiler provides a
+                default Copy Constructor to all the classes.</p>
+            <p>
+            <p>Syntax of Copy Constructor</p>
+
+            Classname(const classname & objectname)<br>
+            {<br>
+            . . . .<br>
+            }
+            </p>
+
+            <h3>Destructors in C++</h3>
+
+            <p>
+                Destructor is a special class function which destroys the object as soon as the scope of object ends.
+                The destructor is called automatically by the compiler when the object goes out of scope.
+            </p>
+            <p>
+                The syntax for destructor is same as that for the constructor, the class name is used for the name of
+                destructor, with a tilde ~ sign as prefix to it.
+            </p>
+
+            <section id="programs">
+                class A<br>
+                {<br>
+                public:<br>
+                // defining destructor for class<br>
+                ~A()<br>
+                {<br>
+                // statement<br>
+                }<br>
+                };
+            </section>
+            <br>
+
+            <p>
+                Example to see how Constructor and Destructor are called
+            </p>
+
+            <p>
+                Below we have a simple class A with a constructor and destructor. We will create object of the class and
+                see
+                when a constructor is called and when a destructor gets called.
+            </p>
+        </div>
+    </div>
+    <!--end of content-->
+    <footer class="panel-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p id="italic">“Any fool can write code that a computer can understand. Good programmers write code
+                        that
+                        humans can understand.”
+                        <hr>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p>Connect
+                        <br>
+
+                        <a class="instagram" href="https://www.instagram.com/" target="_blank">
+                            <img src="images/logo-instagram.svg" alt="logo">
+                        </a>
+                        <a class="facebook" href="https://www.facebook.com/" target="_blank">
+                            <img src="images/logo-facebook.svg" alt="logo">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <span class="bottom">
+                &copy;copyright 2020.All right reserved.<br>
+                cpp-masters
+            </span>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
+</body>
+
+</html>
