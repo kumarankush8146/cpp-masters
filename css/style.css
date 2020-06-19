@@ -250,6 +250,41 @@ table,th,td{
     background-color:whitesmoke;
     padding:10px;
 }
+/*for previous and next button*/
+.r1{
+    background-color:blue;
+    color:white;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding-top:7px;
+    padding-left: 10px;
+    padding-right:10px;
+    padding-bottom: 7px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    left:10px;
+}
+.r2{
+background-color:blue;
+color:white;
+box-sizing: border-box;
+border-radius: 3px;
+padding-top:7px;
+padding-left: 10px;
+padding-right:10px;
+padding-bottom: 7px;
+text-decoration: none;
+text-transform: uppercase;
+font-weight: bold;
+position:absolute;
+right:10px;
+}
+a:hover{
+    background-color: wheat; 
+    text-decoration: none;
+}
 
 
 
