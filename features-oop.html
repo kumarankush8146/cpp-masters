@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css.map">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://www.freepngimg.com/download/c++/6-2-c++-free-download-png.png"
+        type="image/x-icon">
+    <title>cpp-masters</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="index.html">
+                <img src="images/logo2.png" alt="logo">
+            </a>
+            <a class="navbar-brand" href="index.html">
+                <h1>Cpp Masters</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Course
+                        </a>
+                        <div class="dropdown-menu dp" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="topics.html">Topics</a>
+                            <a class="dropdown-item" href="programs.html">Programs</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- content of ifelse.html-->
+    <div class="container">
+        <div class="function">
+            <h1 style="text-align: center;">Features of Object Oriented Programming</h1>
+            <br>
+            <div>
+                <img class="center" style="width:70%;" src="images/oop-f.png">
+            </div>
+
+            <p>
+            <h3>Encapsulation</h3>
+
+            Encapsulation is placing the data and the functions that work on that data in the same place. While
+            working with procedural languages, it is not always clear which functions work on which variables but
+            object-oriented programming provides you framework to place the data and the relevant functions together
+            in the same object.
+            </p>
+            <p>
+                Consider a real-life example of encapsulation, in a company, there are different sections like the
+                accounts section, finance section, sales section etc. The finance section handles all the financial
+                transactions and keeps records of all the data related to finance. Similarly, the sales section handles
+                all the sales-related activities and keeps records of all the sales. Now there may arise a situation
+                when for some reason an official from the finance section needs all the data about sales in a particular
+                month. In this case, he is not allowed to directly access the data of the sales section. He will first
+                have to contact some other officer in the sales section and then request him to give the particular
+                data. This is what encapsulation is. Here the data of the sales section and the employees that can
+                manipulate them are wrapped under a single name “sales section”.
+            </p>
+
+            <p>
+            <h3>Abstraction</h3>
+
+            Data abstraction refers to, providing only essential information to the outside world and hiding their
+            background details, i.e., to represent the needed information in program without presenting the details.
+            </p>
+            <p>
+                Consider a real-life example of a man driving a car. The man only knows that pressing the accelerators
+                will increase the speed of the car or applying brakes will stop the car but he does not know about how
+                on pressing accelerator the speed is actually increasing, he does not know about the inner mechanism of
+                the car or the implementation of accelerator, brakes etc in the car.
+            </p>
+            <p>
+            <h3>Polymorphism</h3>
+
+            The ability to use an operator or function in different ways in other words giving different meaning or
+            functions to the operators or functions is called polymorphism. Poly refers to many. That is a single
+            function or an operator functioning in many ways different upon the usage is called polymorphism.
+            </p>
+            <p>
+                In simple words, we can define polymorphism as the ability of a message to be displayed in more than one
+                form.</p>
+            <p>
+                A person at the same time can have different characteristic. Like a man at the same time is a father, a
+                husband, an employee. So the same person posses different behaviour in different situations. This is
+                called polymorphism.
+            </p>
+            <p>
+                An operation may exhibit different behaviours in different instances. The behaviour depends upon the
+                types of data used in the operation.
+            </p>
+
+            <p>
+                C++ supports operator overloading and function overloading.</p>
+            <p>
+            <ul>
+                <li>
+                    <i>Operator Overloading:</i> The process of making an operator to exhibit different behaviours in
+                    different instances is known as operator overloading.
+                </li>
+                <li>
+                    <i>Function Overloading:</i> Function overloading is using a single function name to perform
+                    different types of tasks.
+                </li>
+            </ul>
+
+            Polymorphism is extensively used in implementing inheritance.
+
+            </p>
+            <p>
+                <b>Example:</b> Suppose we have to write a function to add some integers, some times there are 2
+                integers, some times there are 3 integers. We can write the Addition Method with the same name having
+                different parameters, the concerned method will be called according to parameters.
+            </p>
+
+            <p>
+            <h3>Inheritance</h3>
+            The capability of a class to derive properties and characteristics from another class is called Inheritance.
+            Inheritance is one of the most important features of Object-Oriented Programming.<br>
+
+            Considering <i style="color:blueviolet">HumanBeing</i> a class, which has properties like hands, legs, eyes
+            etc,
+            and functions like
+            walk, talk, eat, see etc. <i style="color:blueviolet">Male</i> and <i style="color:blueviolet">Female</i>
+            are also classes, but most of the properties and
+            functions are
+            included in HumanBeing, hence they can inherit everything from class <i
+                style="color:blueviolet">HumanBeing</i> using the concept of
+            Inheritance.
+            </p>
+            <p>
+            <ul>
+                <li>
+                    <b>Sub Class:</b> The class that inherits properties from another class is called Sub class or
+                    Derived
+                    Class.</li>
+                <li>
+                    <b>Super Class:</b> The class whose properties are inherited by sub class is called Base Class or
+                    Super
+                    class.</li>
+            </ul>
+            </p>
+
+            <p>
+                Implementing inheritance in C++: For creating a sub-class which is inherited from the base class we have
+                to follow the below syntax.<br>
+                <br>
+                <b>Syntax:</b>
+                <br>
+            <section id="programs">
+                class subclass_name : access_mode base_class_name
+                <br>{
+                <br>//body of subclass
+                <br>};
+            </section>
+
+
+            Here, <b>subclass_name</b> is the name of the sub class, <b>access_mode</b> is the mode in which you want to
+            inherit
+            this sub class for example: public, private etc. and <b>base_class_name</b> is the name of the base class
+            from
+            which you want to inherit the sub class.
+            </p>
+            <p>
+                <b>Note:</b> A derived class doesn’t inherit access to private data members. However, it does inherit a
+                full
+                parent object, which contains any private members which that class declares.
+            </p>
+
+
+            <div data-pym-src="https://www.jdoodle.com/embed/v0/28Eh"></div>
+            <p>
+                In the above program the ‘Child’ class is publicly inherited from the ‘Parent’ class so the public data
+                members of the class ‘Parent’ will also be inherited by the class ‘Child’.
+            </p>
+            <p>
+            <h4>Modes of Inheritance</h4>
+            <ul>
+                <li>Public mode: If we derive a sub class from a public base class. Then the public member of the base
+                    class
+                    will become public in the derived class and protected members of the base class will become
+                    protected in
+                    derived class.</li>
+                <li>Protected mode: If we derive a sub class from a Protected base class. Then both public member and
+                    protected members of the base class will become protected in derived class.</li>
+                <li>Private mode: If we derive a sub class from a Private base class. Then both public member and
+                    protected
+                    members of the base class will become Private in derived class.</li>
+            </ul>
+            </p>
+
+            <section id="programs">
+                class A
+                <br>{
+                <br>public:
+                <br>int x;
+                <br>protected:
+                <br>int y;
+                <br>private:
+                <br>int z;
+                <br>};
+                <br>
+                <br>class B : public A
+                <br>{
+                <br>// x is public
+                <br>// y is protected
+                <br>// z is not accessible from B
+                <br>};
+                <br>
+                <br>class C : protected A
+                <br>{
+                <br>// x is protected
+                <br>// y is protected
+                <br>// z is not accessible from C
+                <br>};
+                <br>
+                <br>class D : private A // 'private' is default for classes
+                <br>{
+                <br>// x is private
+                <br>// y is private
+                <br>// z is not accessible from D
+                <br>};
+            </section>
+            <br>
+            <p>
+                The below table summarizes the above three modes and shows the access specifier of the members of base
+                class in the sub class when derived in public, protected and private modes:
+            </p>
+            <div>
+                <img class="center" style="width:60%;" src="images/table.png">
+            </div>
+            <br>
+            <h4>Types of Inheritance in C++</h4>
+            <ul>
+                <li>
+                    <b>Single Inheritance:</b> In single inheritance, a class is allowed to inherit from only one class.
+                    i.e.
+                    one sub class is inherited by one base class only.
+                    <br>
+                    <br>
+                    <div>
+                        <img class="center" style="height:50%; width:30%;" src="images/single-inheritance.png">
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <b>Multiple Inheritance:</b> Multiple Inheritance is a feature of C++ where a class can inherit from
+                    more
+                    than one classes. i.e one sub class is inherited from more than one base classes.
+                    <br>
+                    <br>
+                    <div>
+                        <img class="center" style="height:80%; width:70%;" src="images/multiple-inheritance.png">
+                    </div>
+                    <br>
+                    <br>
+                </li>
+                <li>
+                    <b>Multilevel Inheritance:</b> In this type of inheritance, a derived class is created from another
+                    derived class.
+                    <div>
+                        <br>
+                        <br>
+                        <img class="center" style="height:80%; width:70%;" src="images/multiple-inheritance.png">
+                    </div>
+                    <br>
+                    <br>
+                </li>
+                <li>
+                    <b>Hierarchical Inheritance:</b> In this type of inheritance, more than one sub class is inherited
+                    from a
+                    single base class. i.e. more than one derived class is created from a single base class.
+                    <div>
+                        <br>
+                        <br>
+                        <img class="center" style="height:80%; width:70%;" src="images/hierarchical-inheritance.png">
+                    </div>
+                    <br>
+                    <br>
+                </li>
+                <li>
+                    <b>Hybrid (Virtual) Inheritance:</b> Hybrid Inheritance is implemented by combining more than one
+                    type of
+                    inheritance. For example: Combining Hierarchical inheritance and Multiple Inheritance.
+                    Below image shows the combination of hierarchical and multiple inheritance:
+                    <br>
+                    <br>
+                    <div>
+                        <img class="center" style="height:80%; width:70%;" src="images/Hybrid-Inheritance.png">
+                    </div>
+                    <br>
+                    <br>
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
+    <!--end of content-->
+    <footer class="panel-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p id="italic">“Any fool can write code that a computer can understand. Good programmers write code
+                        that
+                        humans can understand.”
+                        <hr>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p>Connect
+                        <br>
+
+                        <a class="instagram" href="https://www.instagram.com/" target="_blank">
+                            <img src="images/logo-instagram.svg" alt="logo">
+                        </a>
+                        <a class="facebook" href="https://www.facebook.com/" target="_blank">
+                            <img src="images/logo-facebook.svg" alt="logo">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <span class="bottom">
+                &copy;copyright 2020.All right reserved.<br>
+                cpp-masters
+            </span>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
+</body>
+
+</html>

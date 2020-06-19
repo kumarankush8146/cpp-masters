@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css.map">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://www.freepngimg.com/download/c++/6-2-c++-free-download-png.png"
+        type="image/x-icon">
+    <title>cpp-masters</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="index.html">
+                <img src="images/logo2.png" alt="logo">
+            </a>
+            <a class="navbar-brand" href="index.html">
+                <h1>Cpp Masters</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Course
+                        </a>
+                        <div class="dropdown-menu dp" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="topics.html">Topics</a>
+                            <a class="dropdown-item" href="programs.html">Programs</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- content of ifelse.html-->
+    <div class="container">
+        <div class="function">
+            <h1 style="text-align: center;">C++ Access Specifiers – Private, Public and Protected</h1>
+            <p>C++ access specifiers are used for determining or setting the boundary for the availability of class
+                members (data members and member functions) beyond that class.</p>
+            <p>
+                For example, the class members are grouped into sections, private protected and public. These keywords
+                are called access specifiers which define the accessibility or visibility level of class members.
+
+            </p>
+            <p> By default the class members are private. So if the visibility labels are missing then by default all
+                the class members are private.</p>
+            <p>
+                In inheritance, it is important to know when a member function in the base class can be used by the
+                objects of the derived class. This is called accessibility and the access specifiers are used to
+                determine this.
+            </p>
+            <h3>C++ Access Specifiers</h3>
+            <p> Access specifier can be either private or protected or public. In general access specifiers are the
+                access restriction imposed during the derivation of different subclasses from the base class.
+            </p>
+
+            <p>
+            <ul>
+                <li>public - members are accessible from outside the class</li>
+                <li>private - members cannot be accessed (or viewed) from outside the class</li>
+                <li>protected - members cannot be accessed from outside the class, however, they can be accessed in
+                    inherited classes. You will learn more about Inheritance later.</li>
+            </ul>
+
+            </p>
+
+            <div data-pym-src="https://www.jdoodle.com/embed/v0/28Di"></div>
+            <p>If you try to access a private member, an error occurs.</p>
+
+            <p>
+                <b>Note:
+                </b>
+                It is possible to access private members of a class using a public method inside the same class.
+                See the next chapter (Encapsulation) on how to do this.</p>
+            <p>
+                <b>Tip:
+                </b>
+                It is considered good practice to declare your class attributes as private (as often as you can).
+                This will reduce the possibility of yourself (or others) to mess up the code. This is also the main
+                ingredient of the Encapsulation concept, which you will learn more about in the next chapter.
+            </p>
+            <ol>
+                <li>
+                    <b>Public:</b>
+                    All the class members declared under public will be available to everyone. The data members and
+                    member functions declared public can be accessed by other classes too. The public members of a class
+                    can
+                    be accessed from anywhere in the program using the direct member access operator (.) with the object
+                    of
+                    that class.
+                    <p>
+                    <div data-pym-src="https://www.jdoodle.com/embed/v0/28Dm"></div>
+                    </p>
+
+                </li>
+                <li>
+                    <b>Private:</b>
+                    The class members declared as private can be accessed only by the functions inside the
+                    class. They are not allowed to be accessed directly by any object or function outside the class.
+                    Only the member functions or the friend functions are allowed to access the private data members of
+                    a class.</li>
+                <br>
+                <div data-pym-src="https://www.jdoodle.com/embed/v0/28Dq"></div>
+                <li>
+                    <b>Protected:</b>
+                    Protected access modifier is similar to that of private access modifiers, the difference
+                    is that the class member declared as Protected are inaccessible outside the class but they can be
+                    accessed by any subclass(derived class) of that class. We will learn about protected access
+                    specifier in later module.
+
+                </li>
+            </ol>
+
+        </div>
+    </div>
+    <!--end of content-->
+    <footer class="panel-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p id="italic">“Any fool can write code that a computer can understand. Good programmers write code
+                        that
+                        humans can understand.”
+                        <hr>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p>Connect
+                        <br>
+
+                        <a class="instagram" href="https://www.instagram.com/" target="_blank">
+                            <img src="images/logo-instagram.svg" alt="logo">
+                        </a>
+                        <a class="facebook" href="https://www.facebook.com/" target="_blank">
+                            <img src="images/logo-facebook.svg" alt="logo">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <span class="bottom">
+                &copy;copyright 2020.All right reserved.<br>
+                cpp-masters
+            </span>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
+</body>
+
+</html>
