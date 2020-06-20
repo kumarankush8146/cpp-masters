@@ -58,161 +58,148 @@
     <!-- content of c++syntax.html-->
     <div class="container">
         <div id="syntax">
-            <p>
-                As we have seen the very first program that is to print the "hello world!" on the console. So lets
-                understand the structure of an c++ program.
-            </p>
-            <h2>structure of an c++ programs</h2>
-            <section id="programs">
-                Includes files<br>
-                Class declaration<br>
-                Member function definitions<br>
-                Main function program
-            </section>
-            <h3>Includes files</h3>
-            <p> In C++, all the header files may or may not end with the .h extension but in C, all the header files
-                must necessarily begin with the.h extension.
-            </p>
-            <h4>A header file in C/C++ contains:</h4>
+        <p>
+          As we have seen the very first program that is to print the "hello world!" on the console. So lets
+          understand the structure of an c++ program.
+        </p>
+        <h2>structure of an c++ programs</h2>
+        <section id="programs">
+           Includes files<br>
+           Class declaration<br>
+           Member function definitions<br>
+           Main function program
+         </section>
+        <h3>Includes files</h3>
+        <p> In C++, all the header files may or may not end with the .h extension but in C, all the header files
+          must necessarily begin with the.h extension.
+        </p>
+        <h4>A header file in C/C++ contains:</h4>
+        <ul>
+         <li>Function definitions</li>
+
+         <li>Data type definitions</li>
+         <li>Macros</li>
+          <p>Header files offer these features by importing them into your program with the help of a preprocessor
+               directive called #include. These preprocessor directives are responsible for instructing the C/C++
+               compiler that these files need to be processed before compilation.
+          </p>
+          <p>
+           Every C program should necessarily contain the header file (stdio.h) which stands for standard input
+           and output used to take input with the help of scanf() function and display the output using
+           printf() function.
+          </p>
+          <p>
+           C++ program should necessarily contain the header file (iostream) which stands for input and output
+           stream used to take input with the help of “cin>>” function and display the output using “cout<<”
+           function. </p>
+           From this example, it is clear that each header file of C and C++ has its own specific function
+           associated with it.
+
+           <h4>Basically, header files are of 2 types:</h4>
+           <ol>
+           <li>
+           <h4>Standard library header files:</h4> These are the pre-existing header files already
+           available in the C/C++ compiler.
+           </li>
+           <li>
+           <h4>User-defined header files:</h4> Header files starting #define can be designed by the
+              user.
+            </li>
+            Don’t forget to check- Basic structure of C Programming
+            </ol>
+            <h2>2. Syntax of Header File in C/C++</h2>
+            We can define the syntax of the header file in 2 ways:
             <ul>
-                <li>Function definitions</li>
+            <li>#include(filename.h)</li>
+                The name of the header file is enclosed within angular brackets. It is the most common way
+                of defining a header file. As discussed earlier, in C, all header files would compulsorily
+                begin with the .h extension otherwise, you would get a compilation error but it is not the
+                case in C++.
+                <br>
+                For example,<br>
+                #include(string.h) // Supported both in C and C++
+                <br>
+                And,<br>
 
-                <li>Data type definitions</li>
-                <li>Macros</li>
-                <p>Header files offer these features by importing them into your program with the help of a preprocessor
-                    directive called #include. These preprocessor directives are responsible for instructing the C/C++
-                    compiler that these files need to be processed before compilation.
-                </p>
-                <p>
-                    Every C program should necessarily contain the header file (stdio.h) which stands for standard input
-                    and output used to take input with the help of scanf() function and display the output using
-                    printf() function.
-                </p>
-                <p>
-                    C++ program should necessarily contain the header file (iostream) which stands for input and output
-                    stream used to take input with the help of “cin>>” function and display the output using “cout<<”
-                        function. </p>
-                        From this example, it is clear that each header file of C and C++ has its own specific function
-                        associated with it.
+                #include(vector) // An exclusive feature of C++
+                <h4>#include“filename.h” or #include “filename”
+                </h4>
+                <br>
+                The name of the header file is enclosed within double-quotes. It is usually preferred when
+                defining user-defined header files.
+                <br>
+                <br>
+                For example,
+                <br>
+                #include”stdlib.h” // Available in both C and C++
+                <br>
+                <br>
+                And,
+                <br>
+                <br>
+                #inlcude”iostream” // Exclusive to C++
+                <br>
+                <br>
+                <h4>Key takeaway:</h4> We cannot include the same header file in the same program twice.
+                 <br>
+                 Are you aware of the Rules of Syntax in C Programming
+                 <br>
+                 <h2>3. How Header Files Work?</h2>
+                 The source file contains #include which is responsible for directing the C/C++ compiler that
+                 this file needs to be processed before compilation and includes all the necessary data type
+                 and function definitions.
+                 C/C++ Header File
+                 <br>
+                 Let’s have a look at these Header files in C and C++:.
+                 <br>
+                 <h4>1. #include(stdio.h) (Standard input-output header)</h4>
+                 Used to perform input and output operations in C like scanf() and printf().
+                 <h4>2. #include(string.h) (String header)</h4>
+                 Perform string manipulation operations like strlen and strcpy.
+                 <h4>3. #include(conio.h) (Console input-output header)</h4>
+                 Perform console input and console output operations like clrscr() to clear the screen and
+                 getch() to get the character from the keyboard.
+                 <h4>4. #include(stdlib.h) (Standard library header)</h4>
+                 Perform standard utility functions like dynamic memory allocation, using functions such as
+                 malloc() and calloc().
 
-                        <h4>Basically, header files are of 2 types:</h4>
-                        <ol>
-                            <li>
-                                <h4>Standard library header files:</h4> These are the pre-existing header files already
-                                available in the C/C++ compiler.
-                            </li>
-                            <li>
-                                <h4>User-defined header files:</h4> Header files starting #define can be designed by the
-                                user.
-                            </li>
-                            Don’t forget to check- Basic structure of C Programming
-                        </ol>
-                        <h2>2. Syntax of Header File in C/C++</h2>
-                        We can define the syntax of the header file in 2 ways:
-                        <ul>
-                            <li>#include(filename.h)</li>
-                            The name of the header file is enclosed within angular brackets. It is the most common way
-                            of defining a header file. As discussed earlier, in C, all header files would compulsorily
-                            begin with the .h extension otherwise, you would get a compilation error but it is not the
-                            case in C++.
-                            <br>
-                            For example,<br>
-
-
-                            #include(string.h) // Supported both in C and C++
-                            <br>
-                            And,<br>
-
-                            #include(vector) // An exclusive feature of C++
-                            <h4>#include“filename.h” or #include “filename”
-                            </h4>
-                            <br>
-                            The name of the header file is enclosed within double-quotes. It is usually preferred when
-                            defining user-defined header files.
-                            <br>
-                            <br>
-                            For example,
-                            <br>
-                            #include”stdlib.h” // Available in both C and C++
-                            <br>
-                            <br>
-                            And,
-                            <br>
-                            <br>
-                            #inlcude”iostream” // Exclusive to C++
-                            <br>
-                            <br>
-                            <h4>Key takeaway:</h4> We cannot include the same header file in the same program twice.
-                            <br>
-                            Are you aware of the Rules of Syntax in C Programming
-                            <br>
-                            <h2>3. How Header Files Work?</h2>
-                            The source file contains #include which is responsible for directing the C/C++ compiler that
-                            this file needs to be processed before compilation and includes all the necessary data type
-                            and function definitions.
-                            C/C++ Header File
-                            <br>
-                            Let’s have a look at these Header files in C and C++:.
-                            <br>
-                            <h4>1. #include(stdio.h) (Standard input-output header)</h4>
-                            Used to perform input and output operations in C like scanf() and printf().
-
-                            <h4>2. #include(string.h) (String header)</h4>
-                            Perform string manipulation operations like strlen and strcpy.
-
-                            <h4>3. #include(conio.h) (Console input-output header)</h4>
-                            Perform console input and console output operations like clrscr() to clear the screen and
-                            getch() to get the character from the keyboard.
-
-                            <h4>4. #include(stdlib.h) (Standard library header)</h4>
-                            Perform standard utility functions like dynamic memory allocation, using functions such as
-                            malloc() and calloc().
-
-                            <h4>5. #include(math.h) (Math header )</h4>
-                            Perform mathematical operations like sqrt() and pow(). To obtain the square root and the
-                            power of a number respectively.
-
-                            <h4>6. #include(ctype.h)(Character type header)</h4>
-                            Perform character type functions like isaplha() and isdigit(). To find whether the given
-                            character is an alphabet or a digit respectively.
-
-                            <h4>7. #include(time.h)(Time header)</h4>
-                            Perform functions related to date and time like setdate() and getdate(). To modify the
-                            system date and get the CPU time respectively.
-
-                            <h4>8. #include(assert.h) (Assertion header)</h4>
-                            It is used in program assertion functions like assert(). To get an integer data type in
-                            C/C++ as a parameter which prints stderr only if the parameter passed is 0.
-
-                            <h4>9. #include(locale.h) (Localization header)</h4>
-                            Perform localization functions like setlocale() and localeconv(). To set locale and get
-                            locale conventions respectively.
-
-                            <h4>10. #include(signal.h) (Signal header)</h4>
-                            Perform signal handling functions like signal() and raise(). To install signal handler and
-                            to raise the signal in the program respectively
-
-                            <h4>11. #include(setjmp.h) (Jump header)</h4>
-                            Perform jump functions.
-
-                            <h4>12. #include(stdarg.h) (Standard argument header)</h4>
-                            Perform standard argument functions like va_start and va_arg(). To indicate start of the
-                            variable-length argument list and to fetch the arguments from the variable-length argument
-                            list in the program respectively.
-
-                            <h4>13. #include(errno.h) (Error handling header)</h4>
-                            Used to perform error handling operations like errno(). To indicate errors in the program by
-                            initially assigning the value of this function to 0 and then later changing it to indicate
-                            errors.
-                            <h1>class declaration </h1>
-                            <img class="imgc" src="images/Classes-and-Objects-in-C.png" alt="Classes-and-Objects-in-C++">
-                            <h1>main function</h1>
-                            <p>
-                                In c++, main() returns an integer value to the operating system.Therefore, evrey main()
-                                in c++ should end with return 0 statement; otherwise a warning or an error might occur.
-                                The default return type of any function in c++ is int.
-                            </p>
-                              <a class="r1" href="gettingstart.html">previous</a>
+                <h4>5. #include(math.h) (Math header )</h4>
+                Perform mathematical operations like sqrt() and pow(). To obtain the square root and the
+                power of a number respectively.
+               <h4>6. #include(ctype.h)(Character type header)</h4>
+                Perform character type functions like isaplha() and isdigit(). To find whether the given
+                     character is an alphabet or a digit respectively.
+               <h4>7. #include(time.h)(Time header)</h4>
+                     Perform functions related to date and time like setdate() and getdate(). To modify the
+                     system date and get the CPU time respectively.
+                <h4>8. #include(assert.h) (Assertion header)</h4>
+                It is used in program assertion functions like assert(). To get an integer data type in
+                   C/C++ as a parameter which prints stderr only if the parameter passed is 0.
+               <h4>9. #include(locale.h) (Localization header)</h4>
+                      Perform localization functions like setlocale() and localeconv(). To set locale and get
+                     locale conventions respectively.
+               <h4>10. #include(signal.h) (Signal header)</h4>
+                       Perform signal handling functions like signal() and raise(). To install signal handler and
+                       to raise the signal in the program respectively
+               <h4>11. #include(setjmp.h) (Jump header)</h4>
+                       Perform jump functions.
+              <h4>12. #include(stdarg.h) (Standard argument header)</h4>
+                       Perform standard argument functions like va_start and va_arg(). To indicate start of the
+                     variable-length argument list and to fetch the arguments from the variable-length argument
+                      list in the program respectively.
+               <h4>13. #include(errno.h) (Error handling header)</h4>
+                    Used to perform error handling operations like errno(). To indicate errors in the program by
+                   initially assigning the value of this function to 0 and then later changing it to indicate
+                   errors.
+               <h1>class declaration </h1>
+              <img class="imgc" src="images/Classes-and-Objects-in-C.png" alt="Classes-and-Objects-in-C++">
+              <h1>main function</h1>
+              <p>
+                 In c++, main() returns an integer value to the operating system.Therefore, evrey main()
+                in c++ should end with return 0 statement; otherwise a warning or an error might occur.
+                 The default return type of any function in c++ is int.
+              </p>
+        <a class="r1" href="gettingstart.html">previous</a>
         <a class="r2" href="VandDTs.html">next</a>
         </div>
     </div>
