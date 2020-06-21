@@ -285,7 +285,10 @@ a:hover{
     background-color: wheat; 
     text-decoration: none;
 }
-
+/*programs*/
+i{
+    color:red;
+}
 
 
 
