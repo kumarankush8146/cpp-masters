@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css.map">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="index.html">
+                <img src="images/logo2.png" alt="logo">
+            </a>
+            <a class="navbar-brand" href="index.html">
+                <h1>Cpp Masters</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Course
+                        </a>
+                        <div class="dropdown-menu dp" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="topics.html">Topics</a>
+                            <a class="dropdown-item" href="programs.html">Programs</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- content of gettingstart.html-->
+    <div class="container">
+        <div class="gettingstart">
+            <p>
+            <h1 style="text-align: center;color:crimson">Programs to understand Object-oriented Programming</h1>
+            <br>
+            <div>
+                <ul>
+                    <li class="programs-list">
+                        <h3>Complex Number Class </h3>
+                        <p>A ComplexNumber class contains two data members : one is the real part (R) and the other is
+                            imaginary (I) (both integers).</p>
+                        <p>
+                            Implement the Complex numbers class that contains following functions -
+                        </p>
+                        <ol>
+                            <li>Constructor-
+                                You need to create the appropriate constructor.</li>
+                            <li>plus -
+                                This function adds two given complex numbers and updates the first complex number.
+                                e.g.
+
+                                if C1 = 4 + i5 and C2 = 3 +i1
+                                C1.plus(C2) results in:
+                                C1 = 7 + i6 and C2 = 3 + i1
+                            </li>
+
+                            <li> multiply -
+                                This function multiplies two given complex numbers and updates the first complex number.
+                                e.g.
+
+                                if C1 = 4 + i5 and C2 = 1 + i2
+                                C1.multiply(C2) results in:
+                                C1 = -6 + i13 and C2 = 1 + i2
+                            </li>
+                            <li>print -
+                                This function prints the given complex number in the following format :
+
+                                a + ib
+                            </li>
+                        </ol>
+                        <p>
+                            Note : There is space before and after '+' (plus sign) and no space between 'i' (iota
+                            symbol) and b.
+                        </p>
+                        <p>
+                            <b>Input Format :</b><br>
+                            Line 1 : Two integers - real and imaginary part of 1st complex number
+                            <br>Line 2 : Two integers - real and imaginary part of 2nd complex number
+                            <br>Line 3 : An integer representing choice (1 or 2) (1 represents plus function will be
+                            called
+                            and 2 represents multiply function will be called)
+
+                        </p>
+                        <div data-pym-src="https://www.jdoodle.com/embed/v0/298l"></div>
+
+                    </li>
+                    <li class="programs-list">
+                        <h3>Code : Polynomial Class </h3>
+                        <p>
+                            Implement a polynomial class, with following properties and functions.
+                            Properties :</p>
+                        <p>
+                            1. An integer (lets say A) which holds the coefficient and degrees. Use array indices as
+                            degree and A[i] as coefficient of ith degree.
+                            <br>2. An integer holding total size of array A.
+                        </p>
+                        <p>
+                            Implement the Complex numbers class that contains following functions -
+                        </p>
+                        <ol>
+                            <li>
+                                <b>Default constructor</b>
+                            </li>
+                            <li>
+                                <b>Copy constructor</b>
+                            </li>
+                            <li>
+                                <b>setCoefficient -</b>
+                                <p>This function sets coefficient for a particular degree value. If the given degree is
+                                    greater than the current capacity of polynomial, increase the capacity accordingly
+                                    and
+                                    add then set the required coefficient. If the degree is within limits, then previous
+                                    coefficient value is replaced by given coefficient value.
+                                </p>
+                            </li>
+                            <li>
+                                <b>Overload "+" operator (P3 = P1 + P2) :</b>
+                                <br>Adds two polynomials and returns a new polynomial which has result.
+                            </li>
+                            <li>
+                                <b>Overload "-" operator (P3 = p1 - p2) :</b>
+                                <br>Subtracts two polynomials and returns a new polynomial which has result
+                            </li>
+                            <li>
+                                <b>Overload * operator (P3 = P1 * P2) :</b>
+                                <br>Multiplies two polynomials and returns a new polynomial which has result
+                            </li>
+                            <li>
+                                <b>Overload "=" operator (Copy assignment operator) -</b>
+                                <br>Assigns all values of one polynomial to other.
+                            </li>
+                            <li>
+                                <b>print() -</b>
+                                <br>Prints all the terms (only terms with non zero coefficients are to be printed) in
+                                increasing order of degree.
+                            </li>
+                        </ol>
+                        <p>
+                            <b>Print pattern for a single term : coefficient "x" degree</b>
+                            <br>And multiple terms should be printed separated by space. And after printing one
+                            polynomial, print new line.
+                        </p>
+                        <p>
+                            <b>Input Format :</b><br>
+                            Line 1 : N, total number of terms in polynomial P1
+                            <br>Line 2 : N integers representing degree of P1 (separated by space)
+                            <br>Line 3 : N integers representing coefficients of P1 (separated by space)
+                            <br>Line 4 : M, total number of terms in polynomial P2
+                            <br>Line 5 : M integers representing degree of P2 (separated by space)
+                            <br>Line 6 : M integers representing coefficients of P2 (separated by space)
+                            <br>Line 7 : Integer C, choice representing the function to be called (See main for more
+                            details)
+
+                        </p>
+                        <div data-pym-src="https://www.jdoodle.com/embed/v0/298r"></div>
+
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!--end of content-->
+    <footer class="panel-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p id="italic">“Any fool can write code that a computer can understand. Good programmers write code
+                        that
+                        humans can understand.”
+                        <hr>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p>Connect
+                        <br>
+
+                        <a class="instagram" href="https://www.instagram.com/" target="_blank">
+                            <img src="images/logo-instagram.svg" alt="logo">
+                        </a>
+                        <a class="facebook" href="https://www.facebook.com/" target="_blank">
+                            <img src="images/logo-facebook.svg" alt="logo">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <span class="bottom">
+                &copy;copyright 2020.All right reserved.<br>
+                cpp-masters
+            </span>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
+</body>
+
+</html>
