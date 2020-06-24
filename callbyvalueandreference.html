@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css.map">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="https://www.freepngimg.com/download/c++/6-2-c++-free-download-png.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://www.freepngimg.com/download/c++/6-2-c++-free-download-png.png"
+        type="image/x-icon">
     <title>cpp-masters</title>
 </head>
 
@@ -55,58 +56,73 @@
         </nav>
     </header>
 
-    <!-- content of ifelse.html--> 
-   <div class="container">
-     <div class="function">
-       <h2 style="text-align: center;"> Difference between Call by Value and Call by Reference</h2>
-    <p> Functions can be invoked in two ways: Call by Value or Call by Reference. These two ways are generally differentiated by the type of values passed to them as parameters.
-        <br>
-        The parameters passed to function are called actual parameters whereas the parameters received by function are called formal parameters.
-        </p>
-       <h4> Call By Value:</h4><p> In this parameter passing method, values of actual parameters are copied to function’s formal parameters and the two types of parameters are stored in different memory locations. So any changes made inside functions are not reflected in actual parameters of caller.
-        </p>
-        <h4>Call by Reference:</h4><p> Both the actual and formal parameters refer to same locations, so any changes made inside the function are actually reflected in actual parameters of caller.
-    </p>
-    <table>
-        <tr>
-        <th style="background-color: aqua;">CALL BY VALUE</th>
-        <th style="background-color: aqua;">CALL BY REFERENCE</th>
-        </tr>
-        <tr><td>While calling a function, we pass values of variables to it. Such functions are known as “Call By Values”.</td>
-        <td>While calling a function, instead of passing the values of variables, we pass address of variables(location of variables) to the function known as “Call By References.</td>
-        </tr>
-        <tr>
-            <td>In this method, the value of each variable in calling function is copied into corresponding dummy variables of the called function.</td>
-        <td>In this method, the address of actual variables in the calling function are copied into the dummy variables of the called function.</td>
-        </tr>
-        <tr><td>With this method, the changes made to the dummy variables in the called function have no effect on the values of actual variables in the calling function.</td>
-        <td>With this method, using addresses we would have an access to the actual variables and hence we would be able to manipulate them.</td>
-         </tr>
-         <tr>
-             <td>
-                 <div data-pym-src="https://www.jdoodle.com/embed/v0/28s5"></div>
-             </td>
-             <td>
-                 <div data-pym-src="https://www.jdoodle.com/embed/v0/28s6"></div>
-             </td>
-         </tr>
-         <tr>
-             <td>Thus actual values of a and b remain unchanged even after exchanging the values of x and y.</td>
-             <td>Thus actual values of a and b get changed after exchanging values of x and y.</td>
-         </tr>
-         <tr>
-             <td>In call by values we cannot alter the values of actual variables through function calls.</td>
-             <td>In call by reference we can alter the values of variables through function calls.</td>
-         </tr>
-         <tr>
-             <td>Values of variables are passes by Simple technique.</td>
-             <td>Pointer variables are necessary to define to store the address values of variables.</td>
-         </tr>
-    </table>
-           <a class="r1" href="functiontypes.html">previous</a>
-        <a class="r2" href="functionoverloading.html">next</a>
+    <!-- content of ifelse.html-->
+    <div class="container">
+        <div id="syntax">
+            <h2 style="text-align: center;"> Difference between Call by Value and Call by Reference</h2>
+            <p> Functions can be invoked in two ways: Call by Value or Call by Reference. These two ways are generally
+                differentiated by the type of values passed to them as parameters.
+                <br>
+                The parameters passed to function are called actual parameters whereas the parameters received by
+                function are called formal parameters.
+            </p>
+            <h4> Call By Value:</h4>
+            <p> In this parameter passing method, values of actual parameters are copied to function’s formal parameters
+                and the two types of parameters are stored in different memory locations. So any changes made inside
+                functions are not reflected in actual parameters of caller.
+            </p>
+            <h4>Call by Reference:</h4>
+            <p> Both the actual and formal parameters refer to same locations, so any changes made inside the function
+                are actually reflected in actual parameters of caller.
+            </p>
+            <table>
+                <tr>
+                    <th style="background-color: aqua;">CALL BY VALUE</th>
+                    <th style="background-color: aqua;">CALL BY REFERENCE</th>
+                </tr>
+                <tr>
+                    <td>While calling a function, we pass values of variables to it. Such functions are known as “Call
+                        By Values”.</td>
+                    <td>While calling a function, instead of passing the values of variables, we pass address of
+                        variables(location of variables) to the function known as “Call By References.</td>
+                </tr>
+                <tr>
+                    <td>In this method, the value of each variable in calling function is copied into corresponding
+                        dummy variables of the called function.</td>
+                    <td>In this method, the address of actual variables in the calling function are copied into the
+                        dummy variables of the called function.</td>
+                </tr>
+                <tr>
+                    <td>With this method, the changes made to the dummy variables in the called function have no effect
+                        on the values of actual variables in the calling function.</td>
+                    <td>With this method, using addresses we would have an access to the actual variables and hence we
+                        would be able to manipulate them.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div data-pym-src="https://www.jdoodle.com/embed/v0/28s5"></div>
+                    </td>
+                    <td>
+                        <div data-pym-src="https://www.jdoodle.com/embed/v0/28s6"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Thus actual values of a and b remain unchanged even after exchanging the values of x and y.</td>
+                    <td>Thus actual values of a and b get changed after exchanging values of x and y.</td>
+                </tr>
+                <tr>
+                    <td>In call by values we cannot alter the values of actual variables through function calls.</td>
+                    <td>In call by reference we can alter the values of variables through function calls.</td>
+                </tr>
+                <tr>
+                    <td>Values of variables are passes by Simple technique.</td>
+                    <td>Pointer variables are necessary to define to store the address values of variables.</td>
+                </tr>
+            </table>
+            <a class="r1" href="functiontypes.html">previous</a>
+            <a class="r2" href="functionoverloading.html">next</a>
         </div>
-   </div>
+    </div>
     <!--end of content-->
     <footer class="panel-footer">
         <div class="container">

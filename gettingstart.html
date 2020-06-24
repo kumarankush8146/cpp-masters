@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css.map">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="https://www.freepngimg.com/download/c++/6-2-c++-free-download-png.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://www.freepngimg.com/download/c++/6-2-c++-free-download-png.png"
+        type="image/x-icon">
     <title>cpp-masters</title>
 </head>
 
@@ -55,59 +56,85 @@
         </nav>
     </header>
 
-    <!-- content of gettingstart.html--> 
+    <!-- content of gettingstart.html-->
     <div class="container">
-       <div class="gettingstart"><p>
-        So you've decided to learn how to program in C++ but don't know where to start. Here's a brief overview of how you can get started.
-        </p> 
-        <h1>Getting started</h1>
-        <h3>Write a C++ program</h3>
-        <p>
-        Now that you have a compiler installed, its time to write a C++ program. Let's start with the epitome of programming example's, it, the Hello world program. We'll print hello world to the screen using C++ in this example. Create a new file called hello.cpp and write the following code to it −
-        </p>
-        <section id="programs">
-            #include<code><iostream></code><br>
-        
-        int main() {<br>
-           std::cout << "Hello World\n";<br>
-        }<br>
-      </section>
-        <h3>Let's dissect this program.</h3>
-        <br>
-        <h4>Line 1 −</h4>
-           <p> We start with the <code>#include <iostream></code>line which essentially tells the compiler to copy the code from the iostream file(used for managing input and output streams) and paste it in our source file.  Header iostream, that allows to perform standard input and output operations, such as writing the output of this program (Hello World) to the screen. Lines beginning with a hash sign (#) are directives read and interpreted by what is known as the preprocessor.
-        </p>
-        <h4>Line 2 −</h4>
-        <p> A blank line: Blank lines have no effect on a program.
-        </p>
-        <h4>Line 3 −</h4>
-        <p> We then declare a function called main with the return type of int. main() is the entry point of our program. Whenever we run a C++ program, we start with the main function and begin execution from the first line within this function and keep executing each line till we reach the end. We start a block using the curly brace({) here. This marks the beginning of main's function definition, and the closing brace (}) at line 5, marks its end. All statements between these braces are the function's body that defines what happens when main is called.
-        </p>
-        <h4>Line 4 − 
-        </h4>
-        <p><section id="programs">std::cout << "Hello World\n";</section><br>
-        This line is a C++ statement. This statement has three parts: First, std::cout, which identifies the standard console output device. Second the insertion operator << which indicates that what follows is inserted into std::cout. Last, we have a sentence within quotes that we'd like printed on the screen. This will become more clear to you as we proceed in learning C++.
-        In short, we provide a cout object with a string "Hello world\n" to be printed to the standard output device.<br>
-        Note that the statement ends with a semicolon (;). This character marks the end of the statement
-        </p>
-        <h3>Compile the Program</h3>
-        <p>Now that we've written the program, we need to translate it to a language that the processor understands, ie, in binary machine code. We do this using a compiler we installed in the first step. You need to open your terminal/cmd and navigate to the location of the hello.cpp file using the cd command. Assuming you installed the GCC, you can use the following command to compile the program −
-        </p>
-        <p><section id="programs">$ g++ -o hello hello.cpp</section><br>
-        This command means that you want the g++ compiler to create an output file, hello using the source file hello.cpp.
-        </p>
-       <h3> Run the program</h3>
-       <p> Now that we've written our program and compiled it, time to run it! You can run the program using −
-        </p>
-        <p><section id="programs">$ ./hello</section><br>
-        You will get the output −<br>
-        <section id="programs">
-        Hello world
-        </section>
-        </p>
-     <a class="r2" href="c++syntax.html">next</a>
-       </div>
-       
+        <div class="gettingstart">
+            <p>
+                So you've decided to learn how to program in C++ but don't know where to start. Here's a brief overview
+                of how you can get started.
+            </p>
+
+            <h3>Writing a C++ program</h3>
+            <p>
+                Now that you have a compiler installed, its time to write a C++ program. Let's start with the epitome of
+                programming example's, it, the Hello world program. We'll print hello world to the screen using C++ in
+                this example. Create a new file called hello.cpp and write the following code to it −
+            </p>
+            <section id="programs">
+                #include &lt;iostream><br>
+
+                &nbsp;int main()
+                <br>{
+                <br>&nbsp;&nbsp;&nbsp;std::cout << "Hello World\n" ;<br>
+                    }<br>
+            </section>
+            <br>
+            <h3>Let's dissect this program.</h3>
+            <h5>Line 1 −</h5>
+            <p> We start with the <code>#include <iostream></code>line which essentially tells the compiler to copy the
+                code from the iostream file(used for managing input and output streams) and paste it in our source file.
+                Header iostream, that allows to perform standard input and output operations, such as writing the output
+                of this program (Hello World) to the screen. Lines beginning with a hash sign (#) are directives read
+                and interpreted by what is known as the preprocessor.
+            </p>
+            <h5>Line 2 −</h5>
+            <p> A blank line: Blank lines have no effect on a program.
+            </p>
+            <h5>Line 3 −</h5>
+            <p> We then declare a function called main with the return type of int. main() is the entry point of our
+                program. Whenever we run a C++ program, we start with the main function and begin execution from the
+                first line within this function and keep executing each line till we reach the end. We start a block
+                using the curly brace({) here. This marks the beginning of main's function definition, and the closing
+                brace (}) at line 5, marks its end. All statements between these braces are the function's body that
+                defines what happens when main is called.
+            </p>
+            <h5>Line 4 −
+            </h5>
+            <p>
+            <section id="programs">std::cout << "Hello World\n" ;</section><br>
+                    This line is a C++ statement. This statement has three parts: First, std::cout, which identifies the
+                    standard console output device. Second the insertion operator << which indicates that what follows
+                        is inserted into std::cout. Last, we have a sentence within quotes that we'd like printed on the
+                        screen. This will become more clear to you as we proceed in learning C++. In short, we provide a
+                        cout object with a string "Hello world\n" to be printed to the standard output device.<br>
+                        Note that the statement ends with a semicolon (;). This character marks the end of the statement
+                        </p>
+                        <h3>Compile the Program</h3>
+                        <p>Now that we've written the program, we need to translate it to a language that the processor
+                            understands, ie, in binary machine code. We do this using a compiler we installed in the
+                            first step. You need to open your terminal/cmd and navigate to the location of the hello.cpp
+                            file using the cd command. Assuming you installed the GCC, you can use the following command
+                            to compile the program −
+                        </p>
+                        <p>
+                        <section id="programs">$ g++ -o hello hello.cpp</section><br>
+                        This command means that you want the g++ compiler to create an output file, hello using the
+                        source file hello.cpp.
+                        </p>
+                        <h3> Run the program</h3>
+                        <p> Now that we've written our program and compiled it, time to run it! You can run the program
+                            using −
+                        </p>
+                        <p>
+                        <section id="programs">$ ./hello</section><br>
+                        You will get the output −<br>
+                        <section id="programs">
+                            Hello world
+                        </section>
+                        </p>
+                        <a class="r2" href="c++syntax.html">next</a>
+        </div>
+
     </div>
     <!--end of content-->
     <footer class="panel-footer">

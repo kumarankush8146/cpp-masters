@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css.map">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="https://www.freepngimg.com/download/c++/6-2-c++-free-download-png.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://www.freepngimg.com/download/c++/6-2-c++-free-download-png.png"
+        type="image/x-icon">
     <title>cpp-masters</title>
 </head>
 
@@ -55,68 +56,90 @@
         </nav>
     </header>
 
-    <!-- content of ifelse.html--> 
-   <div class="container">
-     <div class="function">
-       <h1 style="text-align: center;"> Function overloading in C++</h1>
-        <p>
-       <b> Function overloading</b> is a C++ programming feature that allows us to have more than one function having same name but different parameter list, when I say parameter list, it means the data type and sequence of the parameters, for example the parameters list of a function myfuncn(int a, float b) is (int, float) which is different from the function myfuncn(float a, int b) parameter list (float, int). Function overloading is a <b>compile-time polymorphism.</b>
-        </p>
-    <p>
-        Now that we know what is parameter list lets see the rules of overloading: we can have following functions in the same scope.
-    </p>
-    <section id="programs">
-        sum(int num1, int num2)<br>
-        sum(int num1, int num2, int num3)<br>
-        sum(int num1, double num2)
-        </section>
-        <p> The easiest way to remember this rule is that the parameters should qualify any one or more of the following conditions, they should have different type, number or sequence of parameters.
-        </p>
-        <h5>For example:</h5>
-        <p>These two functions have different parameter type:
-        </p>
-        <section id="programs">
-        sum(int num1, int num2)<br>
-        sum(double num1, double num2)
-        </section>
-       <p> These two have different number of parameters:
-        </p>
-        <section id="programs">
-        sum(int num1, int num2)
-        sum(int num1, int num2, int num3)
-        </section>
-        <p>These two have different sequence of parameters:
-        </p>
-        <section id="programs">
-        sum(int num1, double num2)<br>
-        sum(double num1, int num2)
-        </section>
-        <p>All of the above three cases are valid case of overloading. We can have any number of functions, just remember that the parameter list should be different. For example:
-        </p>
-        <section id="programs">
-        int sum(int, int)<br>
-        double sum(int, int)
-        </section>
-        <p>This is not allowed as the parameter list is same. Even though they have different return types, its not valid.
-        </p>
-        <h2>Function overloading Example</h2>
-        <p>Lets take an example to understand function overloading in C++.
-        </p>
-       <div data-pym-src="https://www.jdoodle.com/embed/v0/28sV"></div>
-        <h2>Function overloading Example 2</h2>
-        <p>As I mentioned in the beginning of this guide that functions having different return types and same parameter list cannot be overloaded. However if the functions have different parameter list then they can have same or different return types to be eligible for overloading. In short the return type of a function
-        does not play any role in function overloading. All that matters is the parameter list of function.
-        </p>
-       <div data-pym-src="https://www.jdoodle.com/embed/v0/28sX"></div>
-       <p>this program is completely understandable after the reading the c++ classes and objects.</p>
-        <h2>Advantages of Function overloading</h2>
-        <p>The main advantage of function overloading is to the improve the code readability and allows code reusability. In the example 1, we have seen how we were able to have more than one function for the same task(addition) with different parameters, this allowed us to add two integer numbers as well as three integer numbers, if we wanted we could have some more functions with same name and four or five arguments.
-        Imagine if we didn’t have function overloading, we either have the limitation to add only two integers or we had to write different name functions for the same task addition, this would reduce the code readability and reusability.
-    </p>  
-           <a class="r1" href="callbyvalueandreference.html">previous</a>
-        <a class="r2" href="defaultarg.html">next</a>
+    <!-- content of ifelse.html-->
+    <div class="container">
+        <div id="syntax">
+            <h1 style="text-align: center;"> Function overloading in C++</h1>
+            <p>
+                <b> Function overloading</b> is a C++ programming feature that allows us to have more than one function
+                having same name but different parameter list, when I say parameter list, it means the data type and
+                sequence of the parameters, for example the parameters list of a function myfuncn(int a, float b) is
+                (int, float) which is different from the function myfuncn(float a, int b) parameter list (float, int).
+                Function overloading is a <b>compile-time polymorphism.</b>
+            </p>
+            <p>
+                Now that we know what is parameter list lets see the rules of overloading: we can have following
+                functions in the same scope.
+            </p>
+            <section id="programs">
+                sum(int num1, int num2)<br>
+                sum(int num1, int num2, int num3)<br>
+                sum(int num1, double num2)
+            </section>
+            <br>
+            <p> The easiest way to remember this rule is that the parameters should qualify any one or more of the
+                following conditions, they should have different type, number or sequence of parameters.
+            </p>
+            <h5>For example:</h5>
+            <p>These two functions have different parameter type:
+            </p>
+            <section id="programs">
+                sum(int num1, int num2)<br>
+                sum(double num1, double num2)
+            </section>
+            <br>
+            <p> These two have different number of parameters:
+            </p>
+            <section id="programs">
+                sum(int num1, int num2)<br>
+                sum(int num1, int num2, int num3)
+            </section>
+            <br>
+            <p>These two have different sequence of parameters:
+            </p>
+            <section id="programs">
+                sum(int num1, double num2)<br>
+                sum(double num1, int num2)
+            </section>
+            <br>
+            <p>All of the above three cases are valid case of overloading. We can have any number of functions, just
+                remember that the parameter list should be different. For example:
+            </p>
+            <section id="programs">
+                int sum(int, int)<br>
+                double sum(int, int)
+            </section>
+            <br>
+            <p>This is not allowed as the parameter list is same. Even though they have different return types, its not
+                valid.
+            </p>
+            <h2>Function overloading Example</h2>
+            <p>Lets take an example to understand function overloading in C++.
+            </p>
+            <div data-pym-src="https://www.jdoodle.com/embed/v0/28sV"></div>
+            <h2>Function overloading Example 2</h2>
+            <p>As I mentioned in the beginning of this guide that functions having different return types and same
+                parameter list cannot be overloaded. However if the functions have different parameter list then they
+                can have same or different return types to be eligible for overloading. In short the return type of a
+                function
+                does not play any role in function overloading. All that matters is the parameter list of function.
+            </p>
+            <div data-pym-src="https://www.jdoodle.com/embed/v0/28sX"></div>
+            <p>This program is completely understandable after reading c++ classes and objects.</p>
+            <h2>Advantages of Function overloading</h2>
+            <p>The main advantage of function overloading is to the improve the code readability and allows code
+                reusability. In the example 1, we have seen how we were able to have more than one function for the same
+                task(addition) with different parameters, this allowed us to add two integer numbers as well as three
+                integer numbers, if we wanted we could have some more functions with same name and four or five
+                arguments.
+                Imagine if we didn’t have function overloading, we either have the limitation to add only two integers
+                or we had to write different name functions for the same task addition, this would reduce the code
+                readability and reusability.
+            </p>
+            <a class="r1" href="callbyvalueandreference.html">previous</a>
+            <a class="r2" href="defaultarg.html">next</a>
+        </div>
     </div>
-   </div>
     <!--end of content-->
     <footer class="panel-footer">
         <div class="container">

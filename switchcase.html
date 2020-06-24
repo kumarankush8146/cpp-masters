@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css.map">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="https://www.freepngimg.com/download/c++/6-2-c++-free-download-png.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://www.freepngimg.com/download/c++/6-2-c++-free-download-png.png"
+        type="image/x-icon">
     <title>cpp-masters</title>
 </head>
 
@@ -55,62 +56,74 @@
         </nav>
     </header>
 
-    <!-- content start--> 
-   <div class="container">
-    <div class="switch">
-       <h1 style="text-align: center;"> Switch Statement in C/C++</h1>
-<p>Switch case statements are a substitute for long if statements that compare a variable to several integral values
-</p>
-<ul>
-<li>The switch statement is a multiway branch statement. It provides an easy way to dispatch execution to different parts of code based on the value of the expression.
-</li>
-    <li>Switch is a control statement that allows a value to change control of execution.
-</li>
-</ul>
+    <!-- content start-->
+    <div class="container">
+        <div id="syntax">
+            <h1 style="text-align: center;"> Switch Statement in C/C++</h1>
+            <p>Switch case statements are a substitute for long if statements that compare a variable to several
+                integral values
+            </p>
+            <ul>
+                <li>The switch statement is a multiway branch statement. It provides an easy way to dispatch execution
+                    to different parts of code based on the value of the expression.
+                </li>
+                <li>Switch is a control statement that allows a value to change control of execution.
+                </li>
+            </ul>
             <h5>Syntax:</h5>
             <section id="programs">
-switch (n)<br>
-{<br>
-    case 1: // code to be executed if n = 1;<br>
-        break;<br>
-    case 2: // code to be executed if n = 2;<br>
-        break;<br>
-    default: // code to be executed if n doesn't match any cases<br>
-}<br>
-</section>
-<h3>
-Important Points about Switch Case Statements:
-</h3>
-<ol>
-<li>The expression provided in the switch should result in a constant value otherwise it would not be valid.
-<h6>Valid expressions for switch:</h6>
-<section id="programs">
-// Constant expressions allowed<br>
-switch(1+2+23)<br>
-switch(1*2+3%4)<br>
+                switch (n)<br>
+                {<br>
+                case 1: // code to be executed if n = 1;<br>
+                break;<br>
+                case 2: // code to be executed if n = 2;<br>
+                break;<br>
+                default: // code to be executed if n doesn't match any cases<br>
+                }<br>
+            </section>
+            <br>
+            <h3>
+                Important Points about Switch Case Statements:
+            </h3>
+            <ol>
+                <li>The expression provided in the switch should result in a constant value otherwise it would not be
+                    valid.
+                    <h6>Valid expressions for switch:</h6>
+                    <section id="programs">
+                        // Constant expressions allowed<br>
+                        switch(1+2+23)<br>
+                        switch(1*2+3%4)<br>
 
-// Variable expression are allowed provided<br>
-// they are assigned with fixed values<br>
-switch(a*b+c*d)<br>
-switch(a+b+c)<br>
-</section>
-</li>
-<li>Duplicate case values are not allowed.</li>
-<li>The default statement is optional.Even if the switch case statement do not have a default statement,<br>
-it would run without any problem.</li>
-<li>The break statement is used inside the switch to terminate a statement sequence. When a break statement is reached, the switch terminates, and the flow of control jumps to the next line following the switch statement.
-</li>
-    <li>The break statement is optional. If omitted, execution will continue on into the next case. The flow of control will fall through to subsequent cases until a break is reached.</li>
-<li>Nesting of switch statements are allowed, which means you can have switch statements inside another switch. However nested switch statements should be avoided as it makes program more complex and less readable.
-</li>
-    <h5 style="text-align: center;">Flowchart</h5>
-<img class="imgc" src="images/switch.png" alt="flowchart">
-<h5>Example:</h5>
-<div data-pym-src="https://www.jdoodle.com/embed/v0/28mS"></div>
-      <a class="r1" href="breakandcontinue.html">previous</a>
-        <a class="r2" href="function.html">next</a>
+                        // Variable expression are allowed provided<br>
+                        // they are assigned with fixed values<br>
+                        switch(a*b+c*d)<br>
+                        switch(a+b+c)<br>
+                    </section>
+                </li>
+                <li>Duplicate case values are not allowed.</li>
+                <li>The default statement is optional.Even if the switch case statement do not have a default
+                    statement,<br>
+                    it would run without any problem.</li>
+                <li>The break statement is used inside the switch to terminate a statement sequence. When a break
+                    statement is reached, the switch terminates, and the flow of control jumps to the next line
+                    following the switch statement.
+                </li>
+                <li>The break statement is optional. If omitted, execution will continue on into the next case. The flow
+                    of control will fall through to subsequent cases until a break is reached.</li>
+                <li>Nesting of switch statements are allowed, which means you can have switch statements inside another
+                    switch. However nested switch statements should be avoided as it makes program more complex and less
+                    readable.
+                </li>
+                <h5 style="text-align: center;">Flowchart</h5>
+                <div class="img-cont">
+                    <img class="imgc" src="images/switch.png" alt="flowchart">
+                </div>
+                <h5>Example:</h5>
+                <div data-pym-src="https://www.jdoodle.com/embed/v0/28mS"></div>
+                <a class="r1" href="breakandcontinue.html">previous</a>
+                <a class="r2" href="function.html">next</a>
+        </div>
     </div>
-   </div>
     <!--end of content-->
     <footer class="panel-footer">
         <div class="container">

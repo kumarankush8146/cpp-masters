@@ -58,7 +58,7 @@
 
     <!-- content of ifelse.html-->
     <div class="container">
-        <div class="function">
+        <div id="syntax">
             <h1 style="text-align: center;">Features of Object Oriented Programming</h1>
             <br>
             <div>
@@ -216,38 +216,38 @@
             </ul>
             </p>
 
-            <section id="programs">
+            <div id="programs">
                 class A
                 <br>{
-                <br>public:
-                <br>int x;
-                <br>protected:
-                <br>int y;
-                <br>private:
-                <br>int z;
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public:
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int x;
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;protected:
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int y;
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private:
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int z;
                 <br>};
                 <br>
                 <br>class B : public A
                 <br>{
-                <br>// x is public
-                <br>// y is protected
-                <br>// z is not accessible from B
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// x is public
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// y is protected
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// z is not accessible from B
                 <br>};
                 <br>
                 <br>class C : protected A
                 <br>{
-                <br>// x is protected
-                <br>// y is protected
-                <br>// z is not accessible from C
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// x is protected
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// y is protected
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// z is not accessible from C
                 <br>};
                 <br>
                 <br>class D : private A // 'private' is default for classes
                 <br>{
-                <br>// x is private
-                <br>// y is private
-                <br>// z is not accessible from D
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// x is private
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// y is private
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// z is not accessible from D
                 <br>};
-            </section>
+            </div>
             <br>
             <p>
                 The below table summarizes the above three modes and shows the access specifier of the members of base
@@ -319,7 +319,7 @@
                     <br>
                 </li>
             </ul>
-  <a class="r1" href="access-specifiers.html">previous</a>
+            <a class="r1" href="access-specifiers.html">previous</a>
 
         </div>
     </div>

@@ -169,21 +169,26 @@ section{
 /*for gettingstart page*/
 .gettingstart{
     background-color:whitesmoke;
-    padding:10px;
+    padding:30px;
     box-shadow: 2px 2px 3px pink;
 }
 #programs{
     color:palevioletred;
+    padding-left:20px;
 }
 /* for c++syntax page*/
 #syntax{
     background-color:whitesmoke;
-    padding:10px;
+    padding:30px;
     box-shadow: 2px 2px 3px pink;
-    font-size:17px;
+    font-size:18px;
 
 }
 
+.table-cont{
+    padding-top:10px;
+    padding-bottom:10px;
+}
 .arr-cont{
     padding:10px;
 }
@@ -202,6 +207,8 @@ section{
 .img-cont{
     height:100%;
     text-align: center;
+    padding-top:10px;
+    padding-bottom:10px;
     
 }
 .center {

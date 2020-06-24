@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css.map">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="https://www.freepngimg.com/download/c++/6-2-c++-free-download-png.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://www.freepngimg.com/download/c++/6-2-c++-free-download-png.png"
+        type="image/x-icon">
     <title>cpp-masters</title>
 </head>
 
@@ -55,38 +56,52 @@
         </nav>
     </header>
 
-    <!-- content of recursion.html--> 
-   <div class="container">
-      <div class="function">
-      <h1>C++ Recursion with example</h1>
-        <p>
-        The process in which a function calls itself is known as recursion and the corresponding function is called the <b>recursive function.</b> The popular example to understand the recursion is factorial function.
-        </p>
-        <p>Factorial function: f(n) = n*f(n-1), base condition: if n<=1 then f(n) = 1. Don’t worry we wil discuss what is base condition and why it is important.
-        </p>
-        <h2>C++ recursion example: Factorial</h2>
-        <div data-pym-src="https://www.jdoodle.com/embed/v0/28uG"></div>
-        <h2>Base condition</h2>
-       <p> In the above program, you can see that I have provided a base condition in the recursive function. The condition is:
-        </p>
-        <section id="programs">
-        if (n <= 1)<br>
-                return 1;<br>
-        </section>
-        <p>
-        The purpose of recursion is to divide the problem into smaller problems till the base condition is reached. For example in the above factorial program I am solving the factorial function f(n) by calling a smaller factorial function f(n-1), this happens repeatedly until the n value reaches base condition(f(1)=1). If you do not define the base condition in the recursive function then you will get stack overflow error.
-    </p>
-  <h2>Direct recursion vs indirect recursion</h2>
-<h5>Direct recursion:</h5><p> When function calls itself, it is called direct recursion, the example we have seen above is a direct recursion example.
-</p>
-<h5>Indirect recursion:</h5><p> When function calls another function and that function calls the calling function, then this is called indirect recursion. For example: function A calls function B and Function B calls function A.  
-</p>
-<h2>Indirect Recursion Example in C++</h2>
-<div data-pym-src="https://www.jdoodle.com/embed/v0/28uI"></div>
-            <a class="r1" href="defaultarg.html">previous</a>
-        <a class="r2" href="array.html">next</a>
-</div>
-   </div>
+    <!-- content of recursion.html-->
+    <div class="container">
+        <div id="syntax">
+            <h1 style="text-align:center;">Recursion in C++</h1>
+            <p>
+                The process in which a function calls itself is known as recursion and the corresponding function is
+                called the <b>recursive function.</b> The popular example to understand the recursion is factorial
+                function.
+            </p>
+            <p>Factorial function: f(n) = n*f(n-1), base condition: if n<=1 then f(n)=1. Don’t worry we wil discuss what
+                    is base condition and why it is important. </p>
+                    <h4>C++ recursion example: Factorial</h4>
+                    <div data-pym-src="https://www.jdoodle.com/embed/v0/28uG"></div>
+                    <h2>Base condition</h2>
+                    <p> In the above program, you can see that I have provided a base condition in the recursive
+                        function. The condition is:
+                    </p>
+                    <section id="programs">
+                        if (n <= 1)<br>
+                            return 1;<br>
+                    </section>
+                    <p>
+                        The purpose of recursion is to divide the problem into smaller problems till the base condition
+                        is reached. For example in the above factorial program I am solving the factorial function f(n)
+                        by calling a smaller factorial function f(n-1), this happens repeatedly until the n value
+                        reaches base condition(f(1)=1). If you do not define the base condition in the recursive
+                        function then you will get stack overflow error.
+                    </p>
+                    <h2>Direct recursion vs indirect recursion</h2>
+                    <h5>&nbsp;Direct recursion:</h5>
+                    <p> &nbsp;When function calls itself, it is called direct recursion, the example we have seen above
+                        is a
+                        direct recursion example.
+                    </p>
+                    <h5>&nbsp;Indirect recursion:</h5>
+                    <p> &nbsp;When function calls another function and that function calls the calling function, then
+                        this is
+                        called indirect recursion. For example: &nbsp;function A calls function B and Function B calls
+                        function A.
+                    </p>
+                    <h4>Indirect Recursion Example in C++</h4>
+                    <div data-pym-src="https://www.jdoodle.com/embed/v0/28uI"></div>
+                    <a class="r1" href="defaultarg.html">previous</a>
+                    <a class="r2" href="array.html">next</a>
+        </div>
+    </div>
     <!--end of content-->
     <footer class="panel-footer">
         <div class="container">

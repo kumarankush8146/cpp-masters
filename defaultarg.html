@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css.map">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="https://www.freepngimg.com/download/c++/6-2-c++-free-download-png.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://www.freepngimg.com/download/c++/6-2-c++-free-download-png.png"
+        type="image/x-icon">
     <title>cpp-masters</title>
 </head>
 
@@ -55,38 +56,48 @@
         </nav>
     </header>
 
-    <!-- content of ifelse.html--> 
-   <div class="container">
-     <div class="function">
-        <h1 style="text-align:center;">Default Arguments in C++</h1>
-       <p> A default argument is a value provided in a function declaration that is automatically assigned by the compiler if the caller of the function doesn’t provide a value for the argument with a default value.
-       </p>
-       <p>Following is a simple C++ example to demonstrate the use of default arguments. We don’t have to write 3 sum functions, only one function works by using default values for 3rd and 4th arguments.
-     </p>
-     <div data-pym-src="https://www.jdoodle.com/embed/v0/28uz"></div>
-    <p> When Function overloading is done along with default values. Then we need to make sure it will not be ambiguous.
-<br>
-        The compiler will throw error if ambiguous. Following is the modified version of above program.
-    </p>
-    <div data-pym-src="https://www.jdoodle.com/embed/v0/28uB"></div>
-  <h4>Key Points:</h4>
-<ul>
-    <li>Default arguments are different from constant arguments as constant arguments can't be changed whereas default arguments can be overwritten if required.
-    </li>
-        <li>Default arguments are overwritten when calling function provides values for them. For example, calling of function sum(10, 15, 25, 30) overwrites the value of z and w to 25 and 30 respectively.
-</li>
-    <li>During calling of function, arguments from calling function to called function are copied from left to right. Therefore, sum(10, 15, 25) will assign 10, 15 and 25 to x, y, and z. Therefore, the default value is used for w only.
-</li>
-    <li>Once default value is used for an argument in function definition, all subsequent arguments to it must have default value. It can also be stated as default arguments are assigned from right to left. For example, the following function definition is invalid as subsequent argument of default variable z is not default.
-</li>
-</ul>   
-<section id="programs">// Invalid because z has default value, but w after it  <br>
-    // doesn't have default value <br>
-    int sum(int x, int y, int z=0, int w) </section> 
-           <a class="r1" href="functionoverloading.html">previous</a>
-        <a class="r2" href="recursion.html">next</a>
-</div>
-   </div>
+    <!-- content of ifelse.html-->
+    <div class="container">
+        <div id="syntax">
+            <h1 style="text-align:center;">Default Arguments in C++</h1>
+            <p> A default argument is a value provided in a function declaration that is automatically assigned by the
+                compiler if the caller of the function doesn’t provide a value for the argument with a default value.
+            </p>
+            <p>Following is a simple C++ example to demonstrate the use of default arguments. We don’t have to write 3
+                sum functions, only one function works by using default values for 3rd and 4th arguments.
+            </p>
+            <div data-pym-src="https://www.jdoodle.com/embed/v0/28uz"></div>
+            <p> When Function overloading is done along with default values. Then we need to make sure it will not be
+                ambiguous.
+                <br>
+                The compiler will throw error if ambiguous. Following is the modified version of above program.
+            </p>
+            <div data-pym-src="https://www.jdoodle.com/embed/v0/28uB"></div>
+            <h4>Key Points:</h4>
+            <ul>
+                <li>Default arguments are different from constant arguments as constant arguments can't be changed
+                    whereas default arguments can be overwritten if required.
+                </li>
+                <li>Default arguments are overwritten when calling function provides values for them. For example,
+                    calling of function sum(10, 15, 25, 30) overwrites the value of z and w to 25 and 30 respectively.
+                </li>
+                <li>During calling of function, arguments from calling function to called function are copied from left
+                    to right. Therefore, sum(10, 15, 25) will assign 10, 15 and 25 to x, y, and z. Therefore, the
+                    default value is used for w only.
+                </li>
+                <li>Once default value is used for an argument in function definition, all subsequent arguments to it
+                    must have default value. It can also be stated as default arguments are assigned from right to left.
+                    For example, the following function definition is invalid as subsequent argument of default variable
+                    z is not default.
+                </li>
+            </ul>
+            <section id="programs">// Invalid because z has default value, but w after it <br>
+                // doesn't have default value <br>
+                int sum(int x, int y, int z=0, int w) </section>
+            <a class="r1" href="functionoverloading.html">previous</a>
+            <a class="r2" href="recursion.html">next</a>
+        </div>
+    </div>
     <!--end of content-->
     <footer class="panel-footer">
         <div class="container">

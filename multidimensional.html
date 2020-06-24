@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css.map">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="https://www.freepngimg.com/download/c++/6-2-c++-free-download-png.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://www.freepngimg.com/download/c++/6-2-c++-free-download-png.png"
+        type="image/x-icon">
     <title>cpp-masters</title>
 </head>
 
@@ -57,7 +58,7 @@
 
     <!-- content of ifelse.html-->
     <div class="container">
-        <div class="function">
+        <div id="syntax">
             <h1 style="text-align: center;">C++ Multidimensional Arrays</h1>
             <p>In this article, you'll learn about multi-dimensional arrays in C++. More specifically, how to declare
                 them, access them and use them efficiently in your program.
@@ -72,6 +73,7 @@
             </p>
 
             <img class="center" src="images/two-dimensional-array.jpg">
+            <br>
             <p>Three dimensional array also works in a similar way. For example:
 
             <section id="programs">
@@ -83,29 +85,36 @@
             total number of elements this array can hold is 24.
             </p>
 
-            <h2>Multidimensional Array Initialisation</h2>
+            <h3>Multidimensional Array Initialisation</h3>
             <p>You can initialise a multidimensional array in more than one way.
             </p>
-            <h4>Initialisation of two dimensional array</h4>
-            <section id="programs">
-                int test[2][3] = {2, 4, -5, 9, 0, 9};</section>
+            <ul>
+                <li>
+                    <h4>Initialisation of two dimensional array</h4>
+                    <section id="programs">
+                        int test[2][3] = {2, 4, -5, 9, 0, 9};</section>
 
-            Better way to initialise this array with same array elements as above.
-            <section id="programs">
-                int test[2][3] = { {2, 4, 5}, {9, 0 0}};
-            </section>
-            <h4>Initialisation of three dimensional array</h4>
-            <section id="programs">
-                int test[2][3][4] = {3, 4, 2, 3, 0, -3, 9, 11, 23, 12, 23,
-                2, 13, 4, 56, 3, 5, 9, 3, 5, 5, 1, 4, 9};
-            </section>
-            Better way to initialise this array with same elements as above.
-            <section id="programs">
-                int test[2][3][4] = {
-                { {3, 4, 2, 3}, {0, -3, 9, 11}, {23, 12, 23, 2} },
-                { {13, 4, 56, 3}, {5, 9, 3, 5}, {3, 1, 4, 9} }
-                };
-            </section>
+                    Better way to initialise this array with same array elements as above.
+                    <section id="programs">
+                        int test[2][3] = { {2, 4, 5}, {9, 0 0}};
+                    </section>
+                </li>
+                <li>
+                    <h4>Initialisation of three dimensional array</h4>
+                    <section id="programs">
+                        int test[2][3][4] = {3, 4, 2, 3, 0, -3, 9, 11, 23, 12, 23,
+                        2, 13, 4, 56, 3, 5, 9, 3, 5, 5, 1, 4, 9};
+                    </section>
+                    Better way to initialise this array with same elements as above.
+                    <section id="programs">
+                        int test[2][3][4] = {
+                        { {3, 4, 2, 3}, {0, -3, 9, 11}, {23, 12, 23, 2} },
+                        { {13, 4, 56, 3}, {5, 9, 3, 5}, {3, 1, 4, 9} }
+                        };
+                    </section>
+                </li>
+
+            </ul>
             <br>
             <h5>
                 Example 1: Two Dimensional Array</h5>
@@ -115,8 +124,8 @@
             <br>
             <h5>Example 3: Three Dimensional Array</h5>
             <div data-pym-src="https://www.jdoodle.com/embed/v0/28uA"></div>
-          <a class="r1" href="pointer.html">previous</a>
-        <a class="r2" href="strings.html">next</a>
+            <a class="r1" href="pointer.html">previous</a>
+            <a class="r2" href="strings.html">next</a>
         </div>
     </div>
     <!--end of content-->
