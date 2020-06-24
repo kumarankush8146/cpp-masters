@@ -290,6 +290,15 @@ i{
     color:red;
 }
 
+.image-container{
+    text-align: center;
+}
+.image-container img{
+
+    height:50%;
+    width:60%;
+}
+
 
 
 

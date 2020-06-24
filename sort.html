@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css.map">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="index.html">
+                <img src="images/logo2.png" alt="logo">
+            </a>
+            <a class="navbar-brand" href="index.html">
+                <h1>Cpp Masters</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Course
+                        </a>
+                        <div class="dropdown-menu dp" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="topics.html">Topics</a>
+                            <a class="dropdown-item" href="programs.html">Programs</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- content of gettingstart.html-->
+    <div class="container">
+        <div class="gettingstart">
+            <p>
+            <h1 style="text-align: center;color:crimson">Programs to understand Object-oriented Programming</h1>
+            <br>
+            <div>
+                <ul>
+                    <li class="programs-list">
+                        <h3>Binary Search </h3>
+                        <p>
+                            <b>Binary Search:</b> Search a sorted array by repeatedly dividing the search interval in
+                            half.
+                            Begin with an interval covering the whole array. If the value of the search key is less than
+                            the item in the middle of the interval, narrow the interval to the lower half. Otherwise
+                            narrow it to the upper half. Repeatedly check until the value is found or the interval is
+                            empty.
+                        </p>
+                        <p>
+                            We basically ignore half of the elements just after one comparison.
+
+                            <br>1. Compare x with the middle element.
+                            <br>2. If x matches with middle element, we return the mid index.
+                            <br>3. Else If x is greater than the mid element, then x can only lie in right half subarray
+                            after
+                            the mid element. So we recur for right half.
+                            <br>4. Else (x is smaller) recur for the left half.
+
+                        </p>
+                        <p>
+                            <b>Note:</b> Binary Search only works for sorted array
+                        </p>
+
+                        <div data-pym-src="https://www.jdoodle.com/embed/v0/298C"></div>
+
+                    </li>
+                    <li class="programs-list">
+                        <h3>Bubble Sort</h3>
+                        <p>
+                            Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent
+                            elements if they are in wrong order.
+                        </p>
+                        <p>
+                            In the bubble sort technique, each of the elements in the list is compared to its adjacent
+                            element. Thus if there are n elements in list A, then A[0] is compared to A[1], A[1] is
+                            compared to A[2] and so on.
+
+                        <p>After comparing if the first element is greater than the second, the two elements are
+                            swapped then.</p>
+                        </p>
+                        <div data-pym-src="https://www.jdoodle.com/embed/v0/298H"></div>
+                    </li>
+                    <li class="programs-list">
+                        <h3>Insertion Sort</h3>
+                        <p>
+                            Insertion sort is a simple sorting algorithm that works the way we sort playing cards in our
+                            hands. For this technique, we pick up one element from the data set and shift the data
+                            elements to make a place to insert back the picked up element into the data set.
+                        </p>
+                        <p>
+                            Insertion sort algorithm technique is more efficient than the Bubble sort and Selection sort
+                            techniques but is less efficient than the other techniques like Quicksort and Merge sort.
+                        </p>
+                        <div class="image-container">
+                            <img src="images/insertion_sort.jpg">
+                        </div>
+                        <div data-pym-src="https://www.jdoodle.com/embed/v0/298J"></div>
+
+                    </li>
+                    <li class="programs-list">
+                        <h3>Merge Sort</h3>
+                        <p>
+                            Merge Sort is a Divide and Conquer algorithm. It divides input array in two halves, calls
+                            itself for the two halves and then merges the two sorted halves. The merge() function is
+                            used for merging two halves. The merge(arr, l, m, r) is key process that assumes that
+                            arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one.
+                        </p>
+
+                        <div class="image-container">
+                            <img src="images/merge_sort.webp">
+                        </div>
+                        <div style="padding-top:10px;" data-pym-src="https://www.jdoodle.com/embed/v0/298J"></div>
+
+                    </li>
+                    <li class="programs-list">
+                        <h3>Quick Sort </h3>
+                        <p>
+                            Like Merge Sort, QuickSort is a Divide and Conquer algorithm. It picks an element as pivot
+                            and partitions the given arrsay around the picked pivot. There are many different versions
+                            of
+                            quickSort that pick pivot in different ways.
+                        </p>
+
+                        <div style="padding-top:10px;" data-pym-src="https://www.jdoodle.com/embed/v0/298O"></div>
+
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!--end of content-->
+    <footer class="panel-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p id="italic">“Any fool can write code that a computer can understand. Good programmers write code
+                        that
+                        humans can understand.”
+                        <hr>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p>Connect
+                        <br>
+
+                        <a class="instagram" href="https://www.instagram.com/" target="_blank">
+                            <img src="images/logo-instagram.svg" alt="logo">
+                        </a>
+                        <a class="facebook" href="https://www.facebook.com/" target="_blank">
+                            <img src="images/logo-facebook.svg" alt="logo">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <span class="bottom">
+                &copy;copyright 2020.All right reserved.<br>
+                cpp-masters
+            </span>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -101,20 +101,35 @@
                         <div data-pym-src="https://www.jdoodle.com/embed/v0/295l"></div>
                     </li>
                     <li>
-                        <h3>Column Wise Sum </h3>
+                        <h3>Tower of Hanoi </h3>
                         <p>
-                            Given a 2D integer array of size M*N,find and print the sum of ith column elements separated
-                            by space.
+                        <p> Tower of Hanoi is a mathematical puzzle where we have three rods and n disks. The objective
+                            of the puzzle is to move all disks from source rod to destination rod using third rod (say
+                            auxiliary). The rules are :</p>
+                        <ol>
+                            <li>Only one disk can be moved at a time.</li>
+                            <li>A disk can be moved only if it is on the top of a rod.</li>
+                            <li>No disk can be placed on the top of a smaller disk.</li>
+                        </ol>
+                        <p>
+                            Print the steps required to move n disks from source rod to destination rod.
                         </p>
-                        <div data-pym-src="https://www.jdoodle.com/embed/v0/295d"></div>
+                        <p>
+                            Source Rod is named as 'a', auxiliary rod as 'b' and destination rod as 'c'.
+                        </p>
+                        </p>
+                        <div data-pym-src="https://www.jdoodle.com/embed/v0/298b"></div>
                     </li>
                     <li>
-                        <h3>Sort 0 1 </h3>
+                        <h3>Remove Duplicates Recursively </h3>
                         <p>
-                            Write a program to sort 0s ans 1s in array.In the answer 0's should be in the front and 1's
-                            should be at the end
+                            Given a string S, remove consecutive duplicates from it recursively.
                         </p>
-                        <div data-pym-src="https://www.jdoodle.com/embed/v0/295g"></div>
+                        <p>
+                            <b>Input Format :</b>
+                            <br>String S
+                        </p>
+                        <div data-pym-src="https://www.jdoodle.com/embed/v0/298e"></div>
                     </li>
                 </ul>
             </div>
@@ -123,18 +138,27 @@
                 <h4>Some problems for practice</h4>
                 <ol>
                     <li>
-                        <h5>Pair Sum </h5>
+                        <h5>Check AB </h5>
                         <p>
-                            You have been given an integer array and a number X. Print the total
-                            number of pairs in the array which sum to X.
+                        <p>Suppose you have a string, S, made up of only 'a's and 'b's. Write a recursive function that
+                            checks if the string was generated using the following rules:</p>
+                        <p>
+                            a. The string begins with an 'a'
+                            <br>b. Each 'a' is followed by nothing or an 'a' or "bb"
+                            <br>c. Each "bb" is followed by nothing or an 'a'
+                        </p>
+                        If all the rules are followed by the given string, return true otherwise return false.
                         </p>
 
                     </li>
                     <li>
-                        <h5>Triplet Sum</h5>
+                        <h5>Staircase </h5>
                         <p>
-                            You have been given an integer array and a number X. Print the total
-                            number of triplets in the array which sum to X.
+                            A child is running up a staircase with N steps, and can hop either 1 step, 2 steps or 3
+                            steps at a time.
+                        <p>Implement a method to count how many possible ways the child can run up to
+                            the stairs.</p>
+
                         </p>
 
                     </li>
@@ -151,43 +175,40 @@
 
                     </li>
                     <li>
-                        <h5>Replace character </h5>
+                        <h5>Return subset of an array </h5>
                         <p>
-                            Write a program to change all the occurences of a character with other.
+                            Given an integer array (of length n), find and return all the subsets of input array.
+                            Subsets are of length varying from 0 to n, that contain elements of the array. But the order
+                            of elements should remain same as in the input array.
+                            <br>Note : The order of subsets are not important
+
+                        </p>
+                    </li>
+                    <li>
+                        <h5>String to Integer </h5>
+                        <p>
+                            Write a recursive function to convert a given string into the number it represents. That is
+                            input will be a numeric string that contains only numbers, you need to convert the string
+                            into corresponding integer and return the answer.
+                        </p>
+                    </li>
+                    <li>
+                        <h5>Return subsets sum to K </h5>
+                        <p>
+                            Given an array A of size n and an integer K, return all subsets of A which sum to K.
+                        </p>
+                        <p>
+                            Subsets are of length varying from 0 to n, that contain elements of the array. But the order
+                            of elements should remain same as in the input array.
                             <br>
-                            Given an input string S and two characters c1 and c2,you need to replace every occurences of
-                            characters of c1 with c2 in the given string.
-                        </p>
-                    </li>
-                    <li>
-                        <h5>Largest Row or Column </h5>
-                        <p>
-                            Write a program to find out which row or column has largest sum amongst all the rows and
-                            columns.
-                        </p>
-                    </li>
-                    <li>
-                        <h5>Total Salary </h5>
-                        <p>
-                            Write a program to calculate the total salary of a person. The user has to enter the basic
-                            salary (an integer) and the grade (an uppercase character), and depending upon which the
-                            total salary is calculated as -
-                        </p>
-                        <p>totalSalary = basic + hra + da + allow – pf</p>
-                        <div>
-                            hra = 20% of basic
-                            <br>da = 50% of basic
-                            <br>allow = 1700 if grade = ‘A’
-                            <br>allow = 1500 if grade = ‘B’
-                            <br>allow = 1300 if grade = ‘C' or any other character
-                            <br>pf = 11% of basic.
-                        </div>
-                        <p>
-                            <br><b>Note:</b>Round off the total salary and then print the integral part only.
+                            <b>Note : The order of subsets are not important.</b>
+
                         </p>
                         <p>
-                            Input format:<br>
-                            Basic salary & Grade (separated by space)
+                            Input format:
+                            <br>Line 1 : Integer n, Size of input array
+                            <br>Line 2 : Array elements separated by space
+                            <br>Line 3 : K
                         </p>
                         <p>
                             Output format:<br>
