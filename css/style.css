@@ -60,6 +60,7 @@ body{
 
 .dropdown-item:hover{
     width:250px;
+    color:blue;
 }
 
 .prog{
