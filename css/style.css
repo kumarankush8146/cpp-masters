@@ -57,6 +57,16 @@ body{
     background-color:skyblue;
      border-radius:5px;
 }
+
+.dropdown-item:hover{
+    width:250px;
+}
+
+.prog{
+    width:280px;
+
+}
+
 .btn{
     color:#000;
 }
@@ -124,8 +134,9 @@ li{
 }
 
 .dp{
-    height:85px;
-    width:20px;
+    height:550px;
+    width:300px;
+    text-align:left;
 }
 
 
@@ -290,7 +301,7 @@ right:10px;
 }
 a:hover{
     background-color: wheat; 
-    text-decoration: none;
+    text-decoration: bold;
 }
 /*programs*/
 i{
