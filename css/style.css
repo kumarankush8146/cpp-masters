@@ -120,10 +120,10 @@ nav{
     margin-top:20px;
     margin-bottom:20px;
 }  
-.photo li img{
+/* .photo li img{
     width:180px;
     height:130px;
-}
+} */
 
 .headings{
     font-size:30px;
@@ -320,5 +320,30 @@ i{
 
 
 
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        grid-auto-rows: minmax(100px, auto);
+        padding: 0;
+    
+        place-items: center;
+      }
+    
+      .img_logo{
+        width: 26rem;
+        height: auto;
+    }    
+
+}
 
 
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .img_logo{
+        width:180px;
+        height:130px;
+    }
+}
