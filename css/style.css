@@ -241,7 +241,7 @@ table,th,td{
     padding:10px;
 }
 .imgc{
-    max-width:100%;
+    width:100%;
     height:auto;
 }
 /*for ifelse.html*/
